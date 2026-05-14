@@ -1,0 +1,148 @@
+{
+    "Playlists": [
+        {
+            "subtitle": "활기찬 하루 시작",
+            "title": "아침\n에너지 🌅",
+            "playlistID": "pl.u-KVXBDo3CZKKJod",
+            "playlistTag": "0",
+            "backColor": "E52F2F",
+            "waveColor": "FB785E",
+            "playlist": null
+        },
+        {
+            "subtitle": "부드러운 어쿠스틱",
+            "title": "느긋한\n오후 ☀️",
+            "playlistID": "pl.u-8aAVXv1IoqqA7r",
+            "playlistTag": "1",
+            "backColor": "DF983A",
+            "waveColor": "FDDC5C",
+            "playlist": null
+        },
+        {
+            "subtitle": "평온하고 조용함",
+            "title": "조용한\n저녁 🌇",
+            "playlistID": "pl.u-xlyNqPPFkrrqKe",
+            "playlistTag": "2",
+            "backColor": "5FB244",
+            "waveColor": "95DA52",
+            "playlist": null
+        },
+        {
+            "subtitle": "밤 감성 음악",
+            "title": "굿\n나잇 🌙",
+            "playlistID": "pl.u-2aoqXVqcNxxMze",
+            "playlistTag": "3",
+            "backColor": "16797E",
+            "waveColor": "29BC95",
+            "playlist": null
+        },
+        {
+            "subtitle": "숙면용 음악",
+            "title": "미드나잇\n릴랙스 🌠",
+            "playlistID": "pl.u-kv9lbZDt755ma6",
+            "playlistTag": "4",
+            "backColor": "2F62E3",
+            "waveColor": "5EC4FF",
+            "playlist": null
+        },
+        {
+            "subtitle": "파티 인기곡",
+            "title": "파티\n타임 🎉",
+            "playlistID": "pl.u-xlyNq9XTkrrqKe",
+            "playlistTag": "5",
+            "backColor": "749BFF",
+            "waveColor": "E3FDFF",
+            "playlist": null
+        },
+        {
+            "subtitle": "C-Pop 핵심",
+            "title": "C-Pop\n월드 🐼",
+            "playlistID": "pl.u-oZyllEgTR112vD",
+            "playlistTag": "13",
+            "backColor": "59B8DB",
+            "waveColor": "A8DFE2",
+            "playlist": null
+        },
+        {
+            "subtitle": "집중용 로파이",
+            "title": "작업\n집중 👩‍💻",
+            "playlistID": "pl.u-KVXBD8WtZKKJod",
+            "playlistTag": "6",
+            "backColor": "9031AA",
+            "waveColor": "F24CBA",
+            "playlist": null
+        },
+        {
+            "subtitle": "코딩용 비트",
+            "title": "코딩\n포커스 💻",
+            "playlistID": "pl.u-xlyNqLlukrrqKe",
+            "playlistTag": "7",
+            "backColor": "C72150",
+            "waveColor": "FD5282",
+            "playlist": null
+        },
+        {
+            "subtitle": "K-Pop 인기곡",
+            "title": "K-Pop\n월드 🇰🇷",
+            "playlistID": "pl.u-oZyllGaFR112vD",
+            "playlistTag": "14",
+            "backColor": "FE585A",
+            "waveColor": "FF896B",
+            "playlist": null
+        },
+        {
+            "subtitle": "에너지 팝 음악",
+            "title": "러닝\n운동 👟",
+            "playlistID": "pl.u-KVXBDdJtZKKJod",
+            "playlistTag": "8",
+            "backColor": "8D3EC3",
+            "waveColor": "B36AE6",
+            "playlist": null
+        },
+        {
+            "subtitle": "카페 분위기",
+            "title": "커피\n샵 ☕",
+            "playlistID": "pl.u-oZyl3XWTR112vD",
+            "playlistTag": "9",
+            "backColor": "7746DE",
+            "waveColor": "B36AE6",
+            "playlist": null
+        },
+        {
+            "subtitle": "상쾌한 바깥 공기",
+            "title": "산책\n외출 🚶🏼‍♀️",
+            "playlistID": "pl.u-WabZZkAfdGG7pY",
+            "playlistTag": "10",
+            "backColor": "354AE2",
+            "waveColor": "5477FD",
+            "playlist": null
+        },
+        {
+            "subtitle": "드라이브 음악",
+            "title": "로드\n트립 🚗",
+            "playlistID": "pl.u-8aAVXLVcoqqA7r",
+            "playlistTag": "11",
+            "backColor": "4994EC",
+            "waveColor": "6ECBF1",
+            "playlist": null
+        },
+        {
+            "subtitle": "최신 J-Pop",
+            "title": "J-Pop\n월드 🎏",
+            "playlistID": "pl.u-KVXBBjvuZKKJod",
+            "playlistTag": "15",
+            "backColor": "25BFA8",
+            "waveColor": "46E2B8",
+            "playlist": null
+        },
+        {
+            "subtitle": "스트레스 해소",
+            "title": "릴랙스\n요가 🧘",
+            "playlistID": "pl.u-WabZ6D7fdGG7pY",
+            "playlistTag": "12",
+            "backColor": "C6A636",
+            "waveColor": "E3D443",
+            "playlist": null
+        }
+    ]
+}

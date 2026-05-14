@@ -1,0 +1,105 @@
+/* 
+  Localizable.strings
+  DTunes
+
+  Created by OllyWang on 2/26/26.
+  
+*/
+"PlaylistJson" = "Data_RU";
+
+"Lan_MidnightGoSleep" = "Пора спать";
+"Lan_GoodMorning" = "Спокойной\nночи";
+"Lan_GoodAfternoon" = "Добрый\nдень";
+"Lan_GoodEvening" = "Добрый\nвечер";
+"Lan_GoodNight" = "Сладких\nснов";
+"Lan_HelloDear" = "Привет\nдорогой";
+
+"Lan_DailySceneMusic" = "Музыка на каждый момент";
+"Lan_UserPlaylistForYou" = "Ваши плейлисты для вас";
+
+"Setting" = "Настройки";
+"Setting_Premium" = "DTunes Премиум";
+"Setting_PremiumTip" = "Откройте все функции";
+
+"Setting_Account" = "Аккаунт";
+"Setting_Restore" = "Восстановить покупки";
+
+"Setting_Music" = "Музыка";
+"Setting_AutoPlay" = "Автовоспроизведение";
+"Setting_AppleMusic" = "Apple Music";
+"Setting_Sleep" = "Таймер сна";
+
+"Setting_Appearance" = "Внешний вид";
+"Setting_Change" = "Иконка приложения";
+"Setting_Lan" = "Язык";
+
+"Setting_Support" = "Поддержка и обмен";
+"Setting_Rate" = "Оценить";
+"Setting_Share" = "Поделиться";
+"Setting_Ver" = "Версия";
+
+"Setting_Support" = "Сервис и приватность";
+"Setting_Terms" = "Условия";
+"Setting_Privacy" = "Конфиденциальность";
+
+"Setting_AppleMusic_Connected" = "Подключено";
+"Setting_AppleMusic_UnConnected" = "Не подключено";
+
+"SleepTimeOff" = "Выкл";
+"SleepTimeMin" = "мин";
+"SleepTimeStart" = "Старт";
+"SleepTimeEnd" = "Конец";
+
+"Lan_ConnectMusic" = "Подключить музыку";
+"Lan_ConnectMusic_Sub" = "Разрешите медиа и Apple Music в настройках\nдля использования DTunes";
+
+"Lan_JoinAppleMusic" = "Присоединиться к Apple Music";
+"Lan_JoinAppleMusic_Sub" = "Для DTunes требуется подписка Apple Music\nдля воспроизведения";
+
+"Play_NowPlaying" = "Сейчас играет";
+
+"AlertPlaylistNotFoundTitle" = "Уведомление";
+"AlertPlaylistNotFound" = "Недоступно. В вашем регионе не доступно";
+"AlertOK" = "OK";
+
+"UserPlaylistSortByTitle" = "Имя";
+"UserPlaylistSortByDateAdded" = "Недавно добавлено";
+"UserPlaylistSortByLastModified" = "Обновлено";
+"UserPlaylistSortByPlaylistType" = "Тип";
+
+"Share_Tip" = "DTunes: автомузыка сцен с стильными часовыми заставками ✨";
+
+"Widget_UpgradeToPremium" = "Обновить до\nPREMIUM";
+
+"Widget_CoolViny" = "Элегантный винил";
+"WidgetDisplayName_classicMac" = "Назад в 1984";
+"WidgetDescription_classicMac" = "Классический Macintosh и механическая клавиатура";
+
+"WidgetDisplayName_classicMac_edit_title" = "Тема";
+"WidgetDisplayName_classicMac_edit_system" = "Система";
+"WidgetDisplayName_classicMac_edit_dark" = "Тёмная";
+"WidgetDisplayName_classicMac_edit_light" = "Светлая";
+
+"Pay_DTunes" = "DTunes";
+"Pay_Premium" = "Премиум";
+"Pay_PremiumTip" = "Все функции и обновления";
+"Pay_HasPremium" = "Вы премиум-пользователь";
+"Pay_HasPremiumTip" = "Наслаждайтесь музыкой 🎉";
+
+"Pay_AllPlaylists" = "Открыть все плейлисты";
+"Pay_ClockTheme" = "Красивые темы часов";
+"Pay_Widgets" = "Виджеты";
+"Pay_AdFree" = "Без рекламы";
+"Pay_Future" = "Бесплатные обновления";
+
+"Pay_Continue" = "Продолжить";
+"Pay_FreeTrial" = "7 дней бесплатно";
+"Pay_Yearly" = "Годовой";
+"Pay_YearlyTip" = "Автопродление, отмена в любое время";
+"Pay_Lifetime" = "Навсегда";
+"Pay_LifetimeTip" = "Разовая покупка";
+"Pay_HasUnlockAll" = "Все функции разблокированы\nСпасибо за поддержку";
+"Pay_SubscriptionTip" = "Оплата списывается с вашего Apple ID при подтверждении покупки. Подписка автоматически продлевается, если не отменена как минимум за 24 часа до окончания текущего периода. Продление оплачивается в течение 24 часов до окончания периода. Управлять подпиской или отменить её можно в настройках учетной записи App Store. Если доступен бесплатный пробный период, оплата будет списана после его окончания; при смене подписки во время пробного периода оставшееся время аннулируется.";
+
+"Guide_Tip" = "Свайп влево\nк плейлистам";
+

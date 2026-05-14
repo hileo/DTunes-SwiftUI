@@ -1,0 +1,104 @@
+/* 
+  Localizable.strings
+  DTunes
+
+  Created by OllyWang on 2/26/26.
+  
+*/
+"PlaylistJson" = "Data_CN_TR";
+
+"Lan_MidnightGoSleep" = "半夜了 \n去睡覺";
+"Lan_GoodMorning" = "早上\n好";
+"Lan_GoodAfternoon" = "下午\n好";
+"Lan_GoodEvening" = "晚上\n好";
+"Lan_GoodNight" = "晚安\n好夢";
+"Lan_HelloDear" = "你好！\n親愛的";
+
+"Lan_DailySceneMusic" = "每日場景音樂 遠離找歌煩惱";
+"Lan_UserPlaylistForYou" = "盡情享受你的私人歌單";
+
+"Setting" = "設定";
+"Setting_Premium" = "升級到高級會員";
+"Setting_PremiumTip" = "解鎖所有功能與未來更新";
+
+"Setting_Account" = "帳戶";
+"Setting_Restore" = "恢復購買";
+
+"Setting_Music" = "音樂";
+"Setting_AutoPlay" = "自動播放";
+"Setting_AppleMusic" = "Apple Music";
+"Setting_Sleep" = "定時關閉";
+
+"Setting_Appearance" = "外觀";
+"Setting_Change" = "切換圖標";
+"Setting_Lan" = "語言設定";
+
+"Setting_Support" = "分享與支援";
+"Setting_Rate" = "給我們好評";
+"Setting_Share" = "分享給朋友";
+"Setting_Ver" = "版本更新";
+
+"Setting_Support" = "服務與隱私";
+"Setting_Terms" = "服務條款";
+"Setting_Privacy" = "隱私政策";
+
+"Setting_AppleMusic_Connected" = "已連接";
+"Setting_AppleMusic_UnConnected" = "未連接";
+
+"SleepTimeOff" = "關閉";
+"SleepTimeMin" = "分鐘";
+"SleepTimeStart" = "開始";
+"SleepTimeEnd" = "結束";
+
+"Lan_ConnectMusic" = "連接音樂";
+"Lan_ConnectMusic_Sub" = "打開設定允許DTunes訪問媒體與\nApple Music";
+
+"Lan_JoinAppleMusic" = "加入 Apple Music";
+"Lan_JoinAppleMusic_Sub" = "DTunes需要Apple Music訂閱才能播放\n立即訂閱Apple Music";
+
+"Play_NowPlaying" = "正在播放";
+
+"AlertPlaylistNotFoundTitle" = "提示";
+"AlertPlaylistNotFound" = "內容不可用 請求的項目目前在你所在國家或地區不可用";
+"AlertOK" = "OK";
+
+"UserPlaylistSortByTitle" = "名稱";
+"UserPlaylistSortByDateAdded" = "最近新增";
+"UserPlaylistSortByLastModified" = "更新日期";
+"UserPlaylistSortByPlaylistType" = "播放列表類型";
+
+"Share_Tip" = "📲 DTunes - 自動播放場景音樂，封面主題炫酷時鐘螢幕保護🎉";
+
+"Widget_UpgradeToPremium" = "升級到\nPREMIUM";
+
+"Widget_CoolViny" = "令人驚艷的黑膠唱片";
+"WidgetDisplayName_classicMac" = "回到 1984";
+"WidgetDescription_classicMac" = "經典麥金塔 & 機械鍵盤";
+
+"WidgetDisplayName_classicMac_edit_title" = "主題";
+"WidgetDisplayName_classicMac_edit_system" = "系統";
+"WidgetDisplayName_classicMac_edit_dark" = "深色";
+"WidgetDisplayName_classicMac_edit_light" = "淺色";
+
+"Pay_DTunes" = "DTunes";
+"Pay_Premium" = "高級會員";
+"Pay_PremiumTip" = "解鎖所有功能與未來更新";
+"Pay_HasPremium" = "已是高級會員";
+"Pay_HasPremiumTip" = "盡情享受音樂吧🎉";
+
+"Pay_AllPlaylists" = "解鎖所有場景歌單";
+"Pay_ClockTheme" = "精心設計的時鐘主題";
+"Pay_Widgets" = "可控制播放的桌面小工具";
+"Pay_AdFree" = "100%無廣告無打擾";
+"Pay_Future" = "未來新功能免費更新";
+
+"Pay_Continue" = "繼續";
+"Pay_FreeTrial" = "開始7天免費試用";
+"Pay_Yearly" = "年度會員";
+"Pay_YearlyTip" = "自動續訂，隨時可取消";
+"Pay_Lifetime" = "終身會員";
+"Pay_LifetimeTip" = "一次性付費，永久使用";
+"Pay_HasUnlockAll" = "你已解鎖所有功能\n感謝支持";
+
+"Guide_Tip" = "左滑進入你的\n私人歌單";
+

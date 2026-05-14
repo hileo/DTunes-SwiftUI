@@ -1,0 +1,765 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D065B712F8DE0FC00ED212C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D065B472F8DD1ED00ED212C /* WidgetKit.framework */; };
+		5D065B722F8DE0FC00ED212C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D065B492F8DD1ED00ED212C /* SwiftUI.framework */; };
+		5D065B812F8DE0FE00ED212C /* widgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5D065B702F8DE0FC00ED212C /* widgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5D065B892F8DE2E200ED212C /* ClockRotationEffect in Frameworks */ = {isa = PBXBuildFile; productRef = 5D065B882F8DE2E200ED212C /* ClockRotationEffect */; };
+		5D065B8C2F8DE8AF00ED212C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D59C2BF2F5051D1000FB32C /* Localizable.strings */; };
+		5D4617D42F8E12DD0098C823 /* ClockRotationEffect in Frameworks */ = {isa = PBXBuildFile; productRef = 5D4617D32F8E12DD0098C823 /* ClockRotationEffect */; };
+		5D59C2C12F5051D1000FB32C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D59C2BF2F5051D1000FB32C /* Localizable.strings */; };
+		5D59C2C52F505864000FB32C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D59C2C32F505864000FB32C /* InfoPlist.strings */; };
+		5D5CB3382F81622700E7D643 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 5D5CB3372F81622700E7D643 /* ConfettiSwiftUI */; };
+		5D61D79E2F4597DD004D2018 /* VariableBlur in Frameworks */ = {isa = PBXBuildFile; productRef = 5DE2E42F2F25D1B40040F8FB /* VariableBlur */; };
+		5D6734AB2F35D4AF005866C6 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 5D6734AA2F35D4AF005866C6 /* SwiftyJSON */; };
+		5D6914002F1DFF24002C7DED /* TrainOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D6913FF2F1DFF24002C7DED /* TrainOne-Regular.ttf */; };
+		5D6914102F1E0358002C7DED /* Prisma.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D69140F2F1E0358002C7DED /* Prisma.ttf */; };
+		5D6914122F1E0362002C7DED /* PixelTwist.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D6914112F1E0362002C7DED /* PixelTwist.ttf */; };
+		5D8BA2A62F7CDFBB00616ADD /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D8BA2A52F7CDFBB00616ADD /* Launch Screen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D065B7F2F8DE0FE00ED212C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D7C7C3F2EC5B0340098AB10 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D065B6F2F8DE0FC00ED212C;
+			remoteInfo = widgetsExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5D065B592F8DD1EF00ED212C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5D065B812F8DE0FE00ED212C /* widgetsExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5D065B472F8DD1ED00ED212C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		5D065B492F8DD1ED00ED212C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		5D065B622F8DD42D00ED212C /* widgetsExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = widgetsExtension.entitlements; sourceTree = "<group>"; };
+		5D065B702F8DE0FC00ED212C /* widgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = widgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D59C2C02F5051D1000FB32C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D59C2C22F5051DE000FB32C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		5D59C2C42F505864000FB32C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5D59C2C62F505867000FB32C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		5D6913FF2F1DFF24002C7DED /* TrainOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TrainOne-Regular.ttf"; sourceTree = "<group>"; };
+		5D69140F2F1E0358002C7DED /* Prisma.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Prisma.ttf; sourceTree = "<group>"; };
+		5D6914112F1E0362002C7DED /* PixelTwist.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PixelTwist.ttf; sourceTree = "<group>"; };
+		5D76D9BB2F99E566008A6750 /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		5D76D9BC2F99E566008A6750 /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		5D76D9BD2F99E576008A6750 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5D76D9BE2F99E576008A6750 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D76D9BF2F99E581008A6750 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5D76D9C02F99E581008A6750 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D76D9C12F99E58B008A6750 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5D76D9C22F99E58B008A6750 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D76D9C32F99E595008A6750 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5D76D9C42F99E595008A6750 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D76D9C52F99E5A2008A6750 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		5D76D9C62F99E5A2008A6750 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		5D76D9C72F99E5CA008A6750 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5D76D9C82F99E5CA008A6750 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D76D9C92F99E6A8008A6750 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5D76D9CA2F99E6A8008A6750 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D7C7C472EC5B0340098AB10 /* DTunes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DTunes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D8BA2A52F7CDFBB00616ADD /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		5D065B852F8DE0FE00ED212C /* Exceptions for "widgets" folder in "widgetsExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 5D065B6F2F8DE0FC00ED212C /* widgetsExtension */;
+		};
+		5D065B8B2F8DE5C400ED212C /* Exceptions for "DTunes" folder in "widgetsExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Extension/WidgetIntent.swift,
+			);
+			target = 5D065B6F2F8DE0FC00ED212C /* widgetsExtension */;
+		};
+		5D6914022F1DFF5E002C7DED /* Exceptions for "DTunes" folder in "DTunes" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 5D7C7C462EC5B0340098AB10 /* DTunes */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		5D065B732F8DE0FC00ED212C /* widgets */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5D065B852F8DE0FE00ED212C /* Exceptions for "widgets" folder in "widgetsExtension" target */,
+			);
+			path = widgets;
+			sourceTree = "<group>";
+		};
+		5D7C7C492EC5B0340098AB10 /* DTunes */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				5D6914022F1DFF5E002C7DED /* Exceptions for "DTunes" folder in "DTunes" target */,
+				5D065B8B2F8DE5C400ED212C /* Exceptions for "DTunes" folder in "widgetsExtension" target */,
+			);
+			path = DTunes;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D065B6D2F8DE0FC00ED212C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D065B722F8DE0FC00ED212C /* SwiftUI.framework in Frameworks */,
+				5D065B712F8DE0FC00ED212C /* WidgetKit.framework in Frameworks */,
+				5D065B892F8DE2E200ED212C /* ClockRotationEffect in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D7C7C442EC5B0340098AB10 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D4617D42F8E12DD0098C823 /* ClockRotationEffect in Frameworks */,
+				5D5CB3382F81622700E7D643 /* ConfettiSwiftUI in Frameworks */,
+				5D61D79E2F4597DD004D2018 /* VariableBlur in Frameworks */,
+				5D6734AB2F35D4AF005866C6 /* SwiftyJSON in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D065B462F8DD1ED00ED212C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D065B472F8DD1ED00ED212C /* WidgetKit.framework */,
+				5D065B492F8DD1ED00ED212C /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D7C7C3E2EC5B0340098AB10 = {
+			isa = PBXGroup;
+			children = (
+				5D065B622F8DD42D00ED212C /* widgetsExtension.entitlements */,
+				5D8BA2A52F7CDFBB00616ADD /* Launch Screen.storyboard */,
+				5D59C2C32F505864000FB32C /* InfoPlist.strings */,
+				5D59C2BF2F5051D1000FB32C /* Localizable.strings */,
+				5D7C7C492EC5B0340098AB10 /* DTunes */,
+				5D065B732F8DE0FC00ED212C /* widgets */,
+				5D065B462F8DD1ED00ED212C /* Frameworks */,
+				5D7C7C482EC5B0340098AB10 /* Products */,
+				5D6913FF2F1DFF24002C7DED /* TrainOne-Regular.ttf */,
+				5D69140F2F1E0358002C7DED /* Prisma.ttf */,
+				5D6914112F1E0362002C7DED /* PixelTwist.ttf */,
+			);
+			sourceTree = "<group>";
+		};
+		5D7C7C482EC5B0340098AB10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D7C7C472EC5B0340098AB10 /* DTunes.app */,
+				5D065B702F8DE0FC00ED212C /* widgetsExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D065B6F2F8DE0FC00ED212C /* widgetsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D065B822F8DE0FE00ED212C /* Build configuration list for PBXNativeTarget "widgetsExtension" */;
+			buildPhases = (
+				5D065B6C2F8DE0FC00ED212C /* Sources */,
+				5D065B6D2F8DE0FC00ED212C /* Frameworks */,
+				5D065B6E2F8DE0FC00ED212C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				5D065B732F8DE0FC00ED212C /* widgets */,
+			);
+			name = widgetsExtension;
+			packageProductDependencies = (
+				5D065B882F8DE2E200ED212C /* ClockRotationEffect */,
+			);
+			productName = widgetsExtension;
+			productReference = 5D065B702F8DE0FC00ED212C /* widgetsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		5D7C7C462EC5B0340098AB10 /* DTunes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D7C7C522EC5B0360098AB10 /* Build configuration list for PBXNativeTarget "DTunes" */;
+			buildPhases = (
+				5D7C7C432EC5B0340098AB10 /* Sources */,
+				5D7C7C442EC5B0340098AB10 /* Frameworks */,
+				5D7C7C452EC5B0340098AB10 /* Resources */,
+				5D065B592F8DD1EF00ED212C /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D065B802F8DE0FE00ED212C /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				5D7C7C492EC5B0340098AB10 /* DTunes */,
+			);
+			name = DTunes;
+			packageProductDependencies = (
+				5D9B9C772F13888500BEF28D /* Glur */,
+				5D9B9C7A2F1388E200BEF28D /* Glur */,
+				5D9B9C7D2F1395D500BEF28D /* VariableBlurView */,
+				5D6913912F18E045002C7DED /* VariableBlur */,
+				5D6913ED2F1C99AF002C7DED /* BottomSheet */,
+				5D6914322F20FF3B002C7DED /* GlassText */,
+				5D6914352F20FFAC002C7DED /* GlassText */,
+				5D69143B2F20FFED002C7DED /* GlassText */,
+				5DE2E42F2F25D1B40040F8FB /* VariableBlur */,
+				5D6734AA2F35D4AF005866C6 /* SwiftyJSON */,
+				5D5CB3372F81622700E7D643 /* ConfettiSwiftUI */,
+				5D4617D32F8E12DD0098C823 /* ClockRotationEffect */,
+			);
+			productName = DTunes;
+			productReference = 5D7C7C472EC5B0340098AB10 /* DTunes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D7C7C3F2EC5B0340098AB10 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					5D065B6F2F8DE0FC00ED212C = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					5D7C7C462EC5B0340098AB10 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+				};
+			};
+			buildConfigurationList = 5D7C7C422EC5B0340098AB10 /* Build configuration list for PBXProject "DTunes" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+				"zh-HK",
+				ja,
+				de,
+				ru,
+				es,
+				"pt-PT",
+				ko,
+				fr,
+			);
+			mainGroup = 5D7C7C3E2EC5B0340098AB10;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5DE2E42E2F25D1B40040F8FB /* XCLocalSwiftPackageReference "../../../../Github/VariableBlur-main" */,
+				5D6734A92F35D4AF005866C6 /* XCLocalSwiftPackageReference "../../../../Github/SwiftyJSON-master" */,
+				5D5CB3362F81622700E7D643 /* XCLocalSwiftPackageReference "../../../../Github/ConfettiSwiftUI-master" */,
+				5D065B5F2F8DD33900ED212C /* XCLocalSwiftPackageReference "../../../../Github/ClockRotationEffect" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 5D7C7C482EC5B0340098AB10 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D7C7C462EC5B0340098AB10 /* DTunes */,
+				5D065B6F2F8DE0FC00ED212C /* widgetsExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D065B6E2F8DE0FC00ED212C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D065B8C2F8DE8AF00ED212C /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D7C7C452EC5B0340098AB10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D6914002F1DFF24002C7DED /* TrainOne-Regular.ttf in Resources */,
+				5D59C2C52F505864000FB32C /* InfoPlist.strings in Resources */,
+				5D8BA2A62F7CDFBB00616ADD /* Launch Screen.storyboard in Resources */,
+				5D59C2C12F5051D1000FB32C /* Localizable.strings in Resources */,
+				5D6914122F1E0362002C7DED /* PixelTwist.ttf in Resources */,
+				5D6914102F1E0358002C7DED /* Prisma.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D065B6C2F8DE0FC00ED212C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D7C7C432EC5B0340098AB10 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D065B802F8DE0FE00ED212C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D065B6F2F8DE0FC00ED212C /* widgetsExtension */;
+			targetProxy = 5D065B7F2F8DE0FE00ED212C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5D59C2BF2F5051D1000FB32C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D59C2C02F5051D1000FB32C /* en */,
+				5D59C2C22F5051DE000FB32C /* zh-Hans */,
+				5D76D9BC2F99E566008A6750 /* zh-HK */,
+				5D76D9BE2F99E576008A6750 /* ja */,
+				5D76D9C02F99E581008A6750 /* de */,
+				5D76D9C22F99E58B008A6750 /* ru */,
+				5D76D9C42F99E595008A6750 /* es */,
+				5D76D9C62F99E5A2008A6750 /* pt-PT */,
+				5D76D9C82F99E5CA008A6750 /* ko */,
+				5D76D9CA2F99E6A8008A6750 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		5D59C2C32F505864000FB32C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D59C2C42F505864000FB32C /* en */,
+				5D59C2C62F505867000FB32C /* zh-Hans */,
+				5D76D9BB2F99E566008A6750 /* zh-HK */,
+				5D76D9BD2F99E576008A6750 /* ja */,
+				5D76D9BF2F99E581008A6750 /* de */,
+				5D76D9C12F99E58B008A6750 /* ru */,
+				5D76D9C32F99E595008A6750 /* es */,
+				5D76D9C52F99E5A2008A6750 /* pt-PT */,
+				5D76D9C72F99E5CA008A6750 /* ko */,
+				5D76D9C92F99E6A8008A6750 /* fr */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D065B832F8DE0FE00ED212C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = widgetsExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEVELOPMENT_TEAM = 3BD6TPPRK4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = widgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = widgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gogoapp.dtunes.widgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5D065B842F8DE0FE00ED212C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = widgetsExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEVELOPMENT_TEAM = 3BD6TPPRK4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = widgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = widgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gogoapp.dtunes.widgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5D7C7C502EC5B0360098AB10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 3BD6TPPRK4;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5D7C7C512EC5B0360098AB10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 3BD6TPPRK4;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5D7C7C532EC5B0360098AB10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "ICON2 ICON1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = DTunes/DTunes.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEVELOPMENT_TEAM = 3BD6TPPRK4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DTunes/Info.plist;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "App would like to use music library to provide audio playback";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Save image to your Photo Library";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gogoapp.dtunes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5D7C7C542EC5B0360098AB10 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "ICON2 ICON1";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = DTunes/DTunes.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEVELOPMENT_TEAM = 3BD6TPPRK4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DTunes/Info.plist;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "App would like to use music library to provide audio playback";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Save image to your Photo Library";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gogoapp.dtunes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D065B822F8DE0FE00ED212C /* Build configuration list for PBXNativeTarget "widgetsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D065B832F8DE0FE00ED212C /* Debug */,
+				5D065B842F8DE0FE00ED212C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D7C7C422EC5B0340098AB10 /* Build configuration list for PBXProject "DTunes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D7C7C502EC5B0360098AB10 /* Debug */,
+				5D7C7C512EC5B0360098AB10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D7C7C522EC5B0360098AB10 /* Build configuration list for PBXNativeTarget "DTunes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D7C7C532EC5B0360098AB10 /* Debug */,
+				5D7C7C542EC5B0360098AB10 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		5D065B5F2F8DD33900ED212C /* XCLocalSwiftPackageReference "../../../../Github/ClockRotationEffect" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../../../Github/ClockRotationEffect;
+		};
+		5D5CB3362F81622700E7D643 /* XCLocalSwiftPackageReference "../../../../Github/ConfettiSwiftUI-master" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../../../Github/ConfettiSwiftUI-master";
+		};
+		5D6734A92F35D4AF005866C6 /* XCLocalSwiftPackageReference "../../../../Github/SwiftyJSON-master" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../../../Github/SwiftyJSON-master";
+		};
+		5DE2E42E2F25D1B40040F8FB /* XCLocalSwiftPackageReference "../../../../Github/VariableBlur-main" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../../../Github/VariableBlur-main";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5D065B882F8DE2E200ED212C /* ClockRotationEffect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D065B5F2F8DD33900ED212C /* XCLocalSwiftPackageReference "../../../../Github/ClockRotationEffect" */;
+			productName = ClockRotationEffect;
+		};
+		5D4617D32F8E12DD0098C823 /* ClockRotationEffect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D065B5F2F8DD33900ED212C /* XCLocalSwiftPackageReference "../../../../Github/ClockRotationEffect" */;
+			productName = ClockRotationEffect;
+		};
+		5D5CB3372F81622700E7D643 /* ConfettiSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ConfettiSwiftUI;
+		};
+		5D6734AA2F35D4AF005866C6 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftyJSON;
+		};
+		5D6913912F18E045002C7DED /* VariableBlur */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VariableBlur;
+		};
+		5D6913ED2F1C99AF002C7DED /* BottomSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BottomSheet;
+		};
+		5D6914322F20FF3B002C7DED /* GlassText */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GlassText;
+		};
+		5D6914352F20FFAC002C7DED /* GlassText */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GlassText;
+		};
+		5D69143B2F20FFED002C7DED /* GlassText */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GlassText;
+		};
+		5D9B9C772F13888500BEF28D /* Glur */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Glur;
+		};
+		5D9B9C7A2F1388E200BEF28D /* Glur */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Glur;
+		};
+		5D9B9C7D2F1395D500BEF28D /* VariableBlurView */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VariableBlurView;
+		};
+		5DE2E42F2F25D1B40040F8FB /* VariableBlur */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = VariableBlur;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5D7C7C3F2EC5B0340098AB10 /* Project object */;
+}

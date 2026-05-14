@@ -1,0 +1,148 @@
+{
+    "Playlists": [
+        {
+            "subtitle": "Бодрое утро",
+            "title": "Утро\nСвежесть 🌅",
+            "playlistID": "pl.u-KVXBDo3CZKKJod",
+            "playlistTag": "0",
+            "backColor": "E52F2F",
+            "waveColor": "FB785E",
+            "playlist": null
+        },
+        {
+            "subtitle": "Мягкий акустик",
+            "title": "Лёгкий\nДень ☀️",
+            "playlistID": "pl.u-8aAVXv1IoqqA7r",
+            "playlistTag": "1",
+            "backColor": "DF983A",
+            "waveColor": "FDDC5C",
+            "playlist": null
+        },
+        {
+            "subtitle": "Спокойно и тихо",
+            "title": "Тихий\nВечер 🌇",
+            "playlistID": "pl.u-xlyNqPPFkrrqKe",
+            "playlistTag": "2",
+            "backColor": "5FB244",
+            "waveColor": "95DA52",
+            "playlist": null
+        },
+        {
+            "subtitle": "Ночная атмосфера",
+            "title": "Спокойной\nНочи 🌙",
+            "playlistID": "pl.u-2aoqXVqcNxxMze",
+            "playlistTag": "3",
+            "backColor": "16797E",
+            "waveColor": "29BC95",
+            "playlist": null
+        },
+        {
+            "subtitle": "Музыка для сна",
+            "title": "Ночь\nРелакс 🌠",
+            "playlistID": "pl.u-kv9lbZDt755ma6",
+            "playlistTag": "4",
+            "backColor": "2F62E3",
+            "waveColor": "5EC4FF",
+            "playlist": null
+        },
+        {
+            "subtitle": "Популярные хиты",
+            "title": "Время\nТусить 🎉",
+            "playlistID": "pl.u-xlyNq9XTkrrqKe",
+            "playlistTag": "5",
+            "backColor": "749BFF",
+            "waveColor": "E3FDFF",
+            "playlist": null
+        },
+        {
+            "subtitle": "Лучшее C-Pop",
+            "title": "C-Pop\nМир 🐼",
+            "playlistID": "pl.u-oZyllEgTR112vD",
+            "playlistTag": "13",
+            "backColor": "59B8DB",
+            "waveColor": "A8DFE2",
+            "playlist": null
+        },
+        {
+            "subtitle": "Lofi для фокуса",
+            "title": "Работа\nФокус 👩‍💻",
+            "playlistID": "pl.u-KVXBD8WtZKKJod",
+            "playlistTag": "6",
+            "backColor": "9031AA",
+            "waveColor": "F24CBA",
+            "playlist": null
+        },
+        {
+            "subtitle": "Биты для кода",
+            "title": "Кодинг\nФокус 💻",
+            "playlistID": "pl.u-xlyNqLlukrrqKe",
+            "playlistTag": "7",
+            "backColor": "C72150",
+            "waveColor": "FD5282",
+            "playlist": null
+        },
+        {
+            "subtitle": "Топ K-Pop хиты",
+            "title": "K-Pop\nМир 🇰🇷",
+            "playlistID": "pl.u-oZyllGaFR112vD",
+            "playlistTag": "14",
+            "backColor": "FE585A",
+            "waveColor": "FF896B",
+            "playlist": null
+        },
+        {
+            "subtitle": "Энергия с попом",
+            "title": "Бег\nТренировка 👟",
+            "playlistID": "pl.u-KVXBDdJtZKKJod",
+            "playlistTag": "8",
+            "backColor": "8D3EC3",
+            "waveColor": "B36AE6",
+            "playlist": null
+        },
+        {
+            "subtitle": "Уютные кафе вайбы",
+            "title": "Кофе\nШоп ☕",
+            "playlistID": "pl.u-oZyl3XWTR112vD",
+            "playlistTag": "9",
+            "backColor": "7746DE",
+            "waveColor": "B36AE6",
+            "playlist": null
+        },
+        {
+            "subtitle": "Свежо и легко",
+            "title": "Прогулка\nНа улице 🚶🏼‍♀️",
+            "playlistID": "pl.u-WabZZkAfdGG7pY",
+            "playlistTag": "10",
+            "backColor": "354AE2",
+            "waveColor": "5477FD",
+            "playlist": null
+        },
+        {
+            "subtitle": "Музыка в дорогу",
+            "title": "Дорога\nТрип 🚗",
+            "playlistID": "pl.u-8aAVXLVcoqqA7r",
+            "playlistTag": "11",
+            "backColor": "4994EC",
+            "waveColor": "6ECBF1",
+            "playlist": null
+        },
+        {
+            "subtitle": "Новый J-Pop",
+            "title": "J-Pop\nМир 🎏",
+            "playlistID": "pl.u-KVXBBjvuZKKJod",
+            "playlistTag": "15",
+            "backColor": "25BFA8",
+            "waveColor": "46E2B8",
+            "playlist": null
+        },
+        {
+            "subtitle": "Спокойствие и отдых",
+            "title": "Релакс\nЙога 🧘",
+            "playlistID": "pl.u-WabZ6D7fdGG7pY",
+            "playlistTag": "12",
+            "backColor": "C6A636",
+            "waveColor": "E3D443",
+            "playlist": null
+        }
+    ]
+}

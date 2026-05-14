@@ -1,0 +1,105 @@
+/* 
+  Localizable.strings
+  DTunes
+
+  Created by OllyWang on 2/26/26.
+  
+*/
+"PlaylistJson" = "Data_KR";
+
+"Lan_MidnightGoSleep" = "잠잘 시간";
+"Lan_GoodMorning" = "좋은\n아침";
+"Lan_GoodAfternoon" = "좋은\n오후";
+"Lan_GoodEvening" = "좋은\n저녁";
+"Lan_GoodNight" = "달콤한\n꿈";
+"Lan_HelloDear" = "안녕\n친애하는";
+
+"Lan_DailySceneMusic" = "모든 순간의 음악";
+"Lan_UserPlaylistForYou" = "당신의 플레이리스트";
+
+"Setting" = "설정";
+"Setting_Premium" = "DTunes 프리미엄";
+"Setting_PremiumTip" = "모든 기능 사용";
+
+"Setting_Account" = "계정";
+"Setting_Restore" = "구매 복원";
+
+"Setting_Music" = "음악";
+"Setting_AutoPlay" = "자동 재생";
+"Setting_AppleMusic" = "Apple Music";
+"Setting_Sleep" = "수면 타이머";
+
+"Setting_Appearance" = "화면";
+"Setting_Change" = "앱 아이콘 변경";
+"Setting_Lan" = "언어";
+
+"Setting_Support" = "지원 & 공유";
+"Setting_Rate" = "평가";
+"Setting_Share" = "친구와 공유";
+"Setting_Ver" = "버전";
+
+"Setting_Support" = "서비스 & 개인정보";
+"Setting_Terms" = "이용약관";
+"Setting_Privacy" = "개인정보";
+
+"Setting_AppleMusic_Connected" = "연결됨";
+"Setting_AppleMusic_UnConnected" = "미연결";
+
+"SleepTimeOff" = "끔";
+"SleepTimeMin" = "분";
+"SleepTimeStart" = "시작";
+"SleepTimeEnd" = "종료";
+
+"Lan_ConnectMusic" = "음악 연결";
+"Lan_ConnectMusic_Sub" = "설정에서 미디어 및 Apple Music을 활성화\nDTunes 사용";
+
+"Lan_JoinAppleMusic" = "Apple Music 가입";
+"Lan_JoinAppleMusic_Sub" = "DTunes 사용을 위해 Apple Music\n구독이 필요합니다";
+
+"Play_NowPlaying" = "재생 중";
+
+"AlertPlaylistNotFoundTitle" = "알림";
+"AlertPlaylistNotFound" = "사용 불가. 해당 지역에서 지원되지 않음";
+"AlertOK" = "확인";
+
+"UserPlaylistSortByTitle" = "이름";
+"UserPlaylistSortByDateAdded" = "최근 추가";
+"UserPlaylistSortByLastModified" = "최근 수정";
+"UserPlaylistSortByPlaylistType" = "유형";
+
+"Share_Tip" = "DTunes: 자동 재생 시계 스크린 ✨";
+
+"Widget_UpgradeToPremium" = "프리미엄으로\n업그레이드";
+
+"Widget_CoolViny" = "우아한 바이닐";
+"WidgetDisplayName_classicMac" = "1984로 돌아가기";
+"WidgetDescription_classicMac" = "클래식 맥 & 기계식 키보드";
+
+"WidgetDisplayName_classicMac_edit_title" = "테마";
+"WidgetDisplayName_classicMac_edit_system" = "시스템";
+"WidgetDisplayName_classicMac_edit_dark" = "다크";
+"WidgetDisplayName_classicMac_edit_light" = "라이트";
+
+"Pay_DTunes" = "DTunes";
+"Pay_Premium" = "프리미엄";
+"Pay_PremiumTip" = "모든 기능과 업데이트";
+"Pay_HasPremium" = "프리미엄 회원";
+"Pay_HasPremiumTip" = "음악을 즐기세요 🎉";
+
+"Pay_AllPlaylists" = "모든 플레이리스트 해제";
+"Pay_ClockTheme" = "아름다운 시계 테마";
+"Pay_Widgets" = "위젯 기능";
+"Pay_AdFree" = "광고 없음";
+"Pay_Future" = "향후 업데이트 무료";
+
+"Pay_Continue" = "계속";
+"Pay_FreeTrial" = "7일 무료 체험";
+"Pay_Yearly" = "연간";
+"Pay_YearlyTip" = "자동 갱신, 언제든 취소 가능";
+"Pay_Lifetime" = "평생";
+"Pay_LifetimeTip" = "일회 결제";
+"Pay_HasUnlockAll" = "모든 기능이 해제되었습니다\n지원해 주셔서 감사합니다";
+"Pay_SubscriptionTip" = "구매 확인 시 Apple ID로 결제됩니다. 현재 기간 종료 24시간 전까지 취소하지 않으면 자동으로 갱신됩니다. 갱신 요금은 만료 전 24시간 이내에 청구됩니다. 구독은 App Store 계정 설정에서 관리하거나 취소할 수 있습니다. 무료 체험이 제공되는 경우 종료 후 결제되며, 체험 기간 중 구독을 변경하면 남은 체험 기간은 소멸됩니다.";
+
+"Guide_Tip" = "왼쪽으로 스와이프\n플레이리스트로";
+

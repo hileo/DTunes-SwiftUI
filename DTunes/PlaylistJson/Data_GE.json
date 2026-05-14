@@ -1,0 +1,148 @@
+{
+    "Playlists": [
+        {
+            "subtitle": "Frisch in den Tag",
+            "title": "Morgen\nFrische 🌅",
+            "playlistID": "pl.u-KVXBDo3CZKKJod",
+            "playlistTag": "0",
+            "backColor": "E52F2F",
+            "waveColor": "FB785E",
+            "playlist": null
+        },
+        {
+            "subtitle": "Sanft & akustisch",
+            "title": "Lazy\nNachm. ☀️",
+            "playlistID": "pl.u-8aAVXv1IoqqA7r",
+            "playlistTag": "1",
+            "backColor": "DF983A",
+            "waveColor": "FDDC5C",
+            "playlist": null
+        },
+        {
+            "subtitle": "Ruhig & entspannt",
+            "title": "Ruhiger\nAbend 🌇",
+            "playlistID": "pl.u-xlyNqPPFkrrqKe",
+            "playlistTag": "2",
+            "backColor": "5FB244",
+            "waveColor": "95DA52",
+            "playlist": null
+        },
+        {
+            "subtitle": "Sanfte Nacht vibes",
+            "title": "Gute\nNacht 🌙",
+            "playlistID": "pl.u-2aoqXVqcNxxMze",
+            "playlistTag": "3",
+            "backColor": "16797E",
+            "waveColor": "29BC95",
+            "playlist": null
+        },
+        {
+            "subtitle": "Ruhige Musik zum Schlaf",
+            "title": "Mitternacht\nRelax 🌠",
+            "playlistID": "pl.u-kv9lbZDt755ma6",
+            "playlistTag": "4",
+            "backColor": "2F62E3",
+            "waveColor": "5EC4FF",
+            "playlist": null
+        },
+        {
+            "subtitle": "Beliebte Party Hits",
+            "title": "Zeit zu\nFeiern 🎉",
+            "playlistID": "pl.u-xlyNq9XTkrrqKe",
+            "playlistTag": "5",
+            "backColor": "749BFF",
+            "waveColor": "E3FDFF",
+            "playlist": null
+        },
+        {
+            "subtitle": "C-Pop Klassiker",
+            "title": "C-Pop\nWelt 🐼",
+            "playlistID": "pl.u-oZyllEgTR112vD",
+            "playlistTag": "13",
+            "backColor": "59B8DB",
+            "waveColor": "A8DFE2",
+            "playlist": null
+        },
+        {
+            "subtitle": "Lofi Beats Fokus",
+            "title": "Arbeit\nFokus 👩‍💻",
+            "playlistID": "pl.u-KVXBD8WtZKKJod",
+            "playlistTag": "6",
+            "backColor": "9031AA",
+            "waveColor": "F24CBA",
+            "playlist": null
+        },
+        {
+            "subtitle": "Beats fürs Coden",
+            "title": "Coding &\nProg. 💻",
+            "playlistID": "pl.u-xlyNqLlukrrqKe",
+            "playlistTag": "7",
+            "backColor": "C72150",
+            "waveColor": "FD5282",
+            "playlist": null
+        },
+        {
+            "subtitle": "Top K-Pop Hits",
+            "title": "K-Pop\nWelt 🇰🇷",
+            "playlistID": "pl.u-oZyllGaFR112vD",
+            "playlistTag": "14",
+            "backColor": "FE585A",
+            "waveColor": "FF896B",
+            "playlist": null
+        },
+        {
+            "subtitle": "Energie mit Pop Hits",
+            "title": "Laufen\nWorkout 👟",
+            "playlistID": "pl.u-KVXBDdJtZKKJod",
+            "playlistTag": "8",
+            "backColor": "8D3EC3",
+            "waveColor": "B36AE6",
+            "playlist": null
+        },
+        {
+            "subtitle": "Gemütliche Café Vibes",
+            "title": "Coffee\nShop ☕",
+            "playlistID": "pl.u-oZyl3XWTR112vD",
+            "playlistTag": "9",
+            "backColor": "7746DE",
+            "waveColor": "B36AE6",
+            "playlist": null
+        },
+        {
+            "subtitle": "Frisch & belebend",
+            "title": "Spaziergang\nDraußen 🚶🏼‍♀️",
+            "playlistID": "pl.u-WabZZkAfdGG7pY",
+            "playlistTag": "10",
+            "backColor": "354AE2",
+            "waveColor": "5477FD",
+            "playlist": null
+        },
+        {
+            "subtitle": "Beste Roadtrip Musik",
+            "title": "Road\nTrip 🚗",
+            "playlistID": "pl.u-8aAVXLVcoqqA7r",
+            "playlistTag": "11",
+            "backColor": "4994EC",
+            "waveColor": "6ECBF1",
+            "playlist": null
+        },
+        {
+            "subtitle": "Neue J-Pop Hits",
+            "title": "J-Pop\nWelt 🎏",
+            "playlistID": "pl.u-KVXBBjvuZKKJod",
+            "playlistTag": "15",
+            "backColor": "25BFA8",
+            "waveColor": "46E2B8",
+            "playlist": null
+        },
+        {
+            "subtitle": "Stressfrei & ruhig",
+            "title": "Relax\nYoga 🧘",
+            "playlistID": "pl.u-WabZ6D7fdGG7pY",
+            "playlistTag": "12",
+            "backColor": "C6A636",
+            "waveColor": "E3D443",
+            "playlist": null
+        }
+    ]
+}

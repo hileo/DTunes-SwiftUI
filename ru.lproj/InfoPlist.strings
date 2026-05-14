@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  DTunes
+
+  Created by OllyWang on 2/26/26.
+  
+*/
+CFBundleDisplayName = "DTunes";
+NSAppleMusicUsageDescription = "Приложение хочет использовать музыкальную библиотеку для воспроизведения аудио";
+NSPhotoLibraryUsageDescription = "Сохранить изображение в вашу фотобиблиотеку";

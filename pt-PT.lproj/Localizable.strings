@@ -1,0 +1,105 @@
+/* 
+  Localizable.strings
+  DTunes
+
+  Created by OllyWang on 2/26/26.
+  
+*/
+"PlaylistJson" = "Data_PT";
+
+"Lan_MidnightGoSleep" = "Hora de dormir";
+"Lan_GoodMorning" = "Bom\ndia";
+"Lan_GoodAfternoon" = "Boa\ntarde";
+"Lan_GoodEvening" = "Boa\nnoite";
+"Lan_GoodNight" = "Doces\nsonhos";
+"Lan_HelloDear" = "Olá\nquerido";
+
+"Lan_DailySceneMusic" = "Música para cada momento";
+"Lan_UserPlaylistForYou" = "Desfrute suas playlists";
+
+"Setting" = "Configurações";
+"Setting_Premium" = "DTunes Premium";
+"Setting_PremiumTip" = "Acesse todos os recursos";
+
+"Setting_Account" = "Conta";
+"Setting_Restore" = "Restaurar compras";
+
+"Setting_Music" = "Música";
+"Setting_AutoPlay" = "Reprodução automática";
+"Setting_AppleMusic" = "Apple Music";
+"Setting_Sleep" = "Timer de sono";
+
+"Setting_Appearance" = "Aparência";
+"Setting_Change" = "Alterar ícone";
+"Setting_Lan" = "Idioma";
+
+"Setting_Support" = "Suporte & Compartilhar";
+"Setting_Rate" = "Avaliar";
+"Setting_Share" = "Compartilhar com amigos";
+"Setting_Ver" = "Versão";
+
+"Setting_Support" = "Serviço & Privacidade";
+"Setting_Terms" = "Termos de uso";
+"Setting_Privacy" = "Privacidade";
+
+"Setting_AppleMusic_Connected" = "Conectado";
+"Setting_AppleMusic_UnConnected" = "Não conectado";
+
+"SleepTimeOff" = "Desligado";
+"SleepTimeMin" = "min";
+"SleepTimeStart" = "Início";
+"SleepTimeEnd" = "Fim";
+
+"Lan_ConnectMusic" = "Conectar música";
+"Lan_ConnectMusic_Sub" = "Ative Mídia e Apple Music\nnas Configurações para usar DTunes";
+
+"Lan_JoinAppleMusic" = "Assinar Apple Music";
+"Lan_JoinAppleMusic_Sub" = "DTunes requer assinatura Apple Music\npara reproduzir músicas";
+
+"Play_NowPlaying" = "Reproduzindo";
+
+"AlertPlaylistNotFoundTitle" = "Aviso";
+"AlertPlaylistNotFound" = "Não disponível na sua região";
+"AlertOK" = "OK";
+
+"UserPlaylistSortByTitle" = "Nome";
+"UserPlaylistSortByDateAdded" = "Adicionados recentemente";
+"UserPlaylistSortByLastModified" = "Atualizado";
+"UserPlaylistSortByPlaylistType" = "Tipo";
+
+"Share_Tip" = "DTunes: música automática com telas de relógio ✨";
+
+"Widget_UpgradeToPremium" = "Atualizar para\nPREMIUM";
+
+"Widget_CoolViny" = "Vinil elegante";
+"WidgetDisplayName_classicMac" = "Voltar a 1984";
+"WidgetDescription_classicMac" = "Mac clássico e teclado mecânico";
+
+"WidgetDisplayName_classicMac_edit_title" = "Tema";
+"WidgetDisplayName_classicMac_edit_system" = "Sistema";
+"WidgetDisplayName_classicMac_edit_dark" = "Escuro";
+"WidgetDisplayName_classicMac_edit_light" = "Claro";
+
+"Pay_DTunes" = "DTunes";
+"Pay_Premium" = "Premium";
+"Pay_PremiumTip" = "Todos os recursos e atualizações";
+"Pay_HasPremium" = "Você é Premium";
+"Pay_HasPremiumTip" = "Aproveite a música 🎉";
+
+"Pay_AllPlaylists" = "Desbloquear playlists";
+"Pay_ClockTheme" = "Temas de relógio";
+"Pay_Widgets" = "Widgets interativos";
+"Pay_AdFree" = "Sem anúncios";
+"Pay_Future" = "Atualizações futuras grátis";
+
+"Pay_Continue" = "Continuar";
+"Pay_FreeTrial" = "Teste grátis de 7 dias";
+"Pay_Yearly" = "Anual";
+"Pay_YearlyTip" = "Renovação automática, cancele a qualquer momento";
+"Pay_Lifetime" = "Vitalício";
+"Pay_LifetimeTip" = "Pagamento único";
+"Pay_HasUnlockAll" = "Todos os recursos desbloqueados\nObrigado pelo apoio";
+"Pay_SubscriptionTip" = "O pagamento é cobrado no seu Apple ID na confirmação da compra. A assinatura renova automaticamente, a menos que seja cancelada com pelo menos 24 horas de antecedência ao fim do período atual. A renovação será cobrada dentro das 24 horas anteriores ao vencimento. Você pode gerenciar ou cancelar a assinatura nas configurações da conta da App Store. Se houver teste gratuito, a cobrança ocorrerá após o término; alterar o plano durante o teste resultará na perda do tempo restante.";
+
+"Guide_Tip" = "Deslize para a esquerda\npara suas playlists";
+

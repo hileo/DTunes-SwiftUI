@@ -1,0 +1,108 @@
+/* 
+  Localizable.strings
+  DTunes
+
+  Created by OllyWang on 2/26/26.
+  
+*/
+"PlaylistJson" = "Data_CN";
+
+"Lan_MidnightGoSleep" = "半夜了 \n去睡觉";
+"Lan_GoodMorning" = "早上\n好";
+"Lan_GoodAfternoon" = "下午\n好";
+"Lan_GoodEvening" = "晚上\n好";
+"Lan_GoodNight" = "晚安\n好梦";
+"Lan_HelloDear" = "你好！\n亲爱的";
+
+"Lan_DailySceneMusic" = "每日场景音乐 远离找歌烦恼";
+"Lan_UserPlaylistForYou" = "尽情的享受你的私人歌单";
+
+"Setting" = "设置";
+"Setting_Premium" = "升级到高级会员";
+"Setting_PremiumTip" = "解锁所有功能与未来更新";
+
+"Setting_Account" = "账户";
+"Setting_Restore" = "恢复购买";
+
+"Setting_Music" = "音乐";
+"Setting_AutoPlay" = "自动播放";
+"Setting_AppleMusic" = "Apple Music";
+"Setting_Sleep" = "定时关闭";
+
+"Setting_Appearance" = "外观";
+"Setting_Change" = "切换图标";
+"Setting_Lan" = "语言设置";
+
+"Setting_Support" = "分享与支持";
+"Setting_Rate" = "给我们好评";
+"Setting_Share" = "分享给朋友";
+"Setting_Ver" = "版本更新";
+
+"Setting_Support" = "服务与隐私";
+"Setting_Terms" = "服务条款";
+"Setting_Privacy" = "隐私政策";
+
+"Setting_AppleMusic_Connected" = "已连接";
+"Setting_AppleMusic_UnConnected" = "未连接";
+
+"SleepTimeOff" = "关闭";
+"SleepTimeMin" = "分钟";
+"SleepTimeStart" = "开始";
+"SleepTimeEnd" = "结束";
+
+"Lan_ConnectMusic" = "连接音乐";
+"Lan_ConnectMusic_Sub" = "打开设置允许DTunes访问媒体与\nApple Music";
+
+"Lan_JoinAppleMusic" = "加入 Apple Music";
+"Lan_JoinAppleMusic_Sub" = "DTunes需要Apple Music订阅才能播放\n立即订阅Apple Music";
+
+"Play_NowPlaying" = "正在播放";
+
+
+"AlertPlaylistNotFoundTitle" = "提示";
+"AlertPlaylistNotFound" = "内容不可用 请求的项目当前在你所在国家或地区不可用";
+"AlertOK" = "OK";
+
+"UserPlaylistSortByTitle" = "名称";
+"UserPlaylistSortByDateAdded" = "最近添加";
+"UserPlaylistSortByLastModified" = "更新日期";
+"UserPlaylistSortByPlaylistType" = "播放列表类型";
+
+
+"Share_Tip" = " 📲 DTunes - 自动播放场景音乐,封面主题炫酷时钟屏保🎉";
+
+"Widget_UpgradeToPremium" = "升级到\nPREMIUM";
+
+
+"Widget_CoolViny" = "令人惊叹的黑胶唱片";
+"WidgetDisplayName_classicMac" = "回到 1984";
+"WidgetDescription_classicMac" = "经典麦塔金 & 机械键盘";
+
+"WidgetDisplayName_classicMac_edit_title" = "主题";
+"WidgetDisplayName_classicMac_edit_system" = "系统";
+"WidgetDisplayName_classicMac_edit_dark" = "深色";
+"WidgetDisplayName_classicMac_edit_light" = "浅色";
+
+
+"Pay_DTunes" = "DTunes";
+"Pay_Premium" = "高级会员";
+"Pay_PremiumTip" = "解锁所有功能与未来更新";
+"Pay_HasPremium" = "已是高级会员";
+"Pay_HasPremiumTip" = "尽情的享受音乐吧🎉";
+
+"Pay_AllPlaylists" = "解锁所有场景歌单";
+"Pay_ClockTheme" = "精心设计的时钟主题";
+"Pay_Widgets" = "可控制播放的桌面小组件";
+"Pay_AdFree" = "100%无广告无打扰";
+"Pay_Future" = "未来新功能免费更新";
+
+"Pay_Continue" = "继续";
+"Pay_FreeTrial" = "开始7天免费试用";
+"Pay_Yearly" = "年度会员";
+"Pay_YearlyTip" = "自动续订，随时可取消";
+"Pay_Lifetime" = "终身会员";
+"Pay_LifetimeTip" = "一次性付费,永久使用";
+"Pay_HasUnlockAll" = "你已经解锁所有功能\n感谢支持";
+"Pay_SubscriptionTip" = "付款将在确认购买时从您的Apple ID扣除。除非在当前周期结束前至少24小时取消，否则订阅会自动续订。续订费用将在到期前24小时内收取。您可在App Store 账户设置中管理或取消订阅。如提供免费试用，试用结束后将自动收费；试用期间更改订阅将失去剩余试用时间。";
+
+"Guide_Tip" = "左滑进入您的\n私人歌单";

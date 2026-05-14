@@ -1,0 +1,105 @@
+/* 
+  Localizable.strings
+  DTunes
+
+  Created by OllyWang on 2/26/26.
+  
+*/
+"PlaylistJson" = "Data_JA";
+
+"Lan_MidnightGoSleep" = "そろそろ寝る時間";
+"Lan_GoodMorning" = "おやすみ\n夢を";
+"Lan_GoodAfternoon" = "こんにちは\n午後";
+"Lan_GoodEvening" = "こんばんは\n夜";
+"Lan_GoodNight" = "おやすみ\n夢を";
+"Lan_HelloDear" = "こんにちは\nあなた";
+
+"Lan_DailySceneMusic" = "あらゆる瞬間の音楽";
+"Lan_UserPlaylistForYou" = "あなたのプレイリストを楽しむ";
+
+"Setting" = "設定";
+"Setting_Premium" = "DTunesプレミアム";
+"Setting_PremiumTip" = "全機能を利用";
+
+"Setting_Account" = "アカウント";
+"Setting_Restore" = "購入を復元";
+
+"Setting_Music" = "音楽";
+"Setting_AutoPlay" = "自動再生";
+"Setting_AppleMusic" = "Apple Music";
+"Setting_Sleep" = "スリープタイマー";
+
+"Setting_Appearance" = "外観";
+"Setting_Change" = "アイコン変更";
+"Setting_Lan" = "言語";
+
+"Setting_Support" = "サポート&共有";
+"Setting_Rate" = "評価";
+"Setting_Share" = "友達と共有";
+"Setting_Ver" = "バージョン";
+
+"Setting_Support" = "サービス&プライバシー";
+"Setting_Terms" = "利用規約";
+"Setting_Privacy" = "プライバシー";
+
+"Setting_AppleMusic_Connected" = "接続済み";
+"Setting_AppleMusic_UnConnected" = "未接続";
+
+"SleepTimeOff" = "オフ";
+"SleepTimeMin" = "分";
+"SleepTimeStart" = "開始";
+"SleepTimeEnd" = "終了";
+
+"Lan_ConnectMusic" = "音楽接続";
+"Lan_ConnectMusic_Sub" = "設定でメディアとApple Musicを許可\nDTunesを使用";
+
+"Lan_JoinAppleMusic" = "Apple Musicに参加";
+"Lan_JoinAppleMusic_Sub" = "DTunesの再生にはApple Music\n登録が必要です";
+
+"Play_NowPlaying" = "再生中";
+
+"AlertPlaylistNotFoundTitle" = "通知";
+"AlertPlaylistNotFound" = "利用不可。この地域では再生できません";
+"AlertOK" = "OK";
+
+"UserPlaylistSortByTitle" = "名前";
+"UserPlaylistSortByDateAdded" = "追加順";
+"UserPlaylistSortByLastModified" = "最終更新";
+"UserPlaylistSortByPlaylistType" = "種類";
+
+"Share_Tip" = "DTunes: シーン音楽自動再生の時計スクリーンセーバー✨";
+
+"Widget_UpgradeToPremium" = "プレミアムに\nアップグレード";
+
+"Widget_CoolViny" = "エレガントなレコード";
+"WidgetDisplayName_classicMac" = "1984へ";
+"WidgetDescription_classicMac" = "クラシックMac&メカニカルキーボード";
+
+"WidgetDisplayName_classicMac_edit_title" = "テーマ";
+"WidgetDisplayName_classicMac_edit_system" = "システム";
+"WidgetDisplayName_classicMac_edit_dark" = "ダーク";
+"WidgetDisplayName_classicMac_edit_light" = "ライト";
+
+"Pay_DTunes" = "DTunes";
+"Pay_Premium" = "プレミアム";
+"Pay_PremiumTip" = "全機能と今後のアップデート";
+"Pay_HasPremium" = "プレミアム会員です";
+"Pay_HasPremiumTip" = "音楽を楽しんで 🎉";
+
+"Pay_AllPlaylists" = "全プレイリスト解放";
+"Pay_ClockTheme" = "美しい時計テーマ";
+"Pay_Widgets" = "ホームウィジェット";
+"Pay_AdFree" = "広告なし";
+"Pay_Future" = "今後のアップデート無料";
+
+"Pay_Continue" = "続ける";
+"Pay_FreeTrial" = "7日間無料トライアル";
+"Pay_Yearly" = "年額";
+"Pay_YearlyTip" = "自動更新・いつでも解約";
+"Pay_Lifetime" = "買い切り";
+"Pay_LifetimeTip" = "一回払い";
+"Pay_HasUnlockAll" = "すべての機能を解放済み\nご支援ありがとうございます";
+"Pay_SubscriptionTip" = "購入確認時にApple IDに課金されます。現在の期間終了の24時間前までに解約しない限り、自動更新されます。更新料金は期間終了前24時間以内に請求されます。サブスクリプションはApp Storeのアカウント設定から管理・解約できます。無料トライアルがある場合、終了後に課金されます。トライアル期間中にプランを変更すると、残りの試用期間は失効します。";
+
+"Guide_Tip" = "左にスワイプで\nプレイリストへ";
+

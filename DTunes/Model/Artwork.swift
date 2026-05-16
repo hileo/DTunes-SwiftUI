@@ -50,7 +50,7 @@ struct GridArtwork: View {
         Button {
             impact()
             withAnimation(.openClock) {
-                showClock.toggle()
+                showClock = true
             }
             Task {
                 do {

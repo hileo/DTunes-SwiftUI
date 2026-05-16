@@ -156,7 +156,6 @@ final class PlayerManager: ObservableObject {
         
         if let url = song.artwork?.url(width: 300, height: 300),
            let data = try? Data(contentsOf: url) {
-            print("图像 ",data)
             defaults?.set(data, forKey: "widgetAppSongImage")
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {

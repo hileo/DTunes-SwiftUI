@@ -125,7 +125,7 @@ struct PlaylistDtunesView: View {
                     // 只有当卡片未被推到顶部模糊区时才允许点击
                     let isClickable = distance > -10
 
-                    let isLock = !player.appIsPro
+                    let isLock = index == 0 ? false : !player.appIsPro
 
                     PlaylistItem(
                         playlist: playlist,

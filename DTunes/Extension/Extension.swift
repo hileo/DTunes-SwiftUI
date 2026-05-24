@@ -274,11 +274,11 @@ func saveCurrentScreenView<V: View>(view: V, geometry: GeometryProxy) {
 
 
 var colorPrimaryDefault: Color {
-   return Color(hex: "858585")//FFDA3A
+   return Color(hex: "CFCDBC")//FFDA3A
 }
 
 var colorSecondaryDefault: Color {
-    return Color(hex: "989898")//EB9415
+    return Color(hex: "403F3B")//EB9415
 }
 
 func interpolateColor(from start: Color, to end: Color, progress: CGFloat) -> Color {

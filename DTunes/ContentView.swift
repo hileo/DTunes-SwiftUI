@@ -22,12 +22,14 @@ struct ContentView: View {
     @State private var show = false
     @State private var showClock = false
     @State private var hasScrolled = false
+    @State private var isOpeningPlaylistDetail = false
     
     @State private var isGuidePresented: Bool = false
     // MARK: - Body
     var body: some View {
         ZStack {
             tabView
+                .allowsHitTesting(!show && !isOpeningPlaylistDetail)
             if show {
                 playlistDetail
             }
@@ -53,6 +55,11 @@ struct ContentView: View {
             } else {
                 print("sheet 关闭了")
                 isGuidePresented = true
+            }
+        }
+        .onChange(of: show) { _, newValue in
+            if !newValue {
+                isOpeningPlaylistDetail = false
             }
         }
         .ignoresSafeArea()
@@ -88,7 +95,13 @@ struct ContentView: View {
     
     private var tabView: some View {
         TabView(selection: $select) {
-            PlaylistDtunesView(selectedID: $selectedID, show: $show, hasScrolled: $hasScrolled, namespace: namespace)
+            PlaylistDtunesView(
+                selectedID: $selectedID,
+                show: $show,
+                hasScrolled: $hasScrolled,
+                isOpeningDetail: $isOpeningPlaylistDetail,
+                namespace: namespace
+            )
                 .tag(0)
                 .overlay{
                     if player.shownGuide {
@@ -96,7 +109,13 @@ struct ContentView: View {
                     }
                 }
             
-            PlaylistUserView(selectedID: $selectedID, show: $show, hasScrolled: $hasScrolled, namespace: namespace)
+            PlaylistUserView(
+                selectedID: $selectedID,
+                show: $show,
+                hasScrolled: $hasScrolled,
+                isOpeningDetail: $isOpeningPlaylistDetail,
+                namespace: namespace
+            )
                 .tag(1)
         }
         .background(.black)

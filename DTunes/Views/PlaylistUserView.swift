@@ -13,6 +13,7 @@ struct PlaylistUserView: View {
     @Binding var selectedID: String
     @Binding var show: Bool
     @Binding var hasScrolled: Bool
+    @Binding var isOpeningDetail: Bool
     
     var namespace: Namespace.ID
     
@@ -90,6 +91,7 @@ struct PlaylistUserView: View {
                     let frame = proxy.frame(in: .scrollView(axis: .vertical))
                     let distance = min(0, frame.minY)
                     let isClickable = distance > -10
+                    let isSelectedForDetail = show && selectedID == playlist.playlistID
 
                     // 根据滚动位置计算颜色进度
                     let normalizedY = calculateNormalizedY(from: frame.minY)
@@ -116,14 +118,18 @@ struct PlaylistUserView: View {
                     )
                     .frame(height: 220)
                     .visualEffect { content, proxy in
-                        content
-                            .scaleEffect(1 + distance / 900)
-                            .offset(y: -distance / 1.35)
-                            .blur(radius: -distance / 60)
-                            .brightness(distance / 500)
+                        let visualDistance: CGFloat = isSelectedForDetail ? 0 : distance
+
+                        return content
+                            .scaleEffect(1 + visualDistance / 900)
+                            .offset(y: -visualDistance / 1.35)
+                            .blur(radius: -visualDistance / 60)
+                            .brightness(visualDistance / 500)
                     }
                     .allowsHitTesting(isClickable)
                     .onTapGesture {
+                        guard !show && !isOpeningDetail else { return }
+
                         playlist.backColor = backColor.toHex() ?? "ff0000"
                         playlist.waveColor = waveColor.toHex() ?? "00ff00"
                        
@@ -133,9 +139,10 @@ struct PlaylistUserView: View {
                         if playlist.playlistID != player.currentPlaylist?.playlistID {
                             player.nowPlayingTracks = player.tracksPlaylistDict[playlist.playlistID] ?? []
                         }
+                        isOpeningDetail = true
                         withAnimation(.openCard) {
                             selectedID = playlist.playlistID
-                            show.toggle()
+                            show = true
                         }
                     }
                     .onChange(of: frame.minY) { oldValue, newValue in

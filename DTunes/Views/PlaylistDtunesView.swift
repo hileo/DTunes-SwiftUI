@@ -13,6 +13,7 @@ struct PlaylistDtunesView: View {
     @Binding var selectedID: String
     @Binding var show: Bool
     @Binding var hasScrolled: Bool
+    @Binding var isOpeningDetail: Bool
 
     var namespace: Namespace.ID
     
@@ -57,11 +58,14 @@ struct PlaylistDtunesView: View {
             VStack(alignment: .leading, spacing: 10) {
                 GreetingTitleView()
                     .onTapGesture(count: 2) {
+                        guard !show && !isOpeningDetail else { return }
+
                         let currentPlaylist = TimePeriod.current().playlist(from: player.playlists)
                         print("double tap ",currentPlaylist.id)
+                        isOpeningDetail = true
                         withAnimation(.openCard) {
                             selectedID = currentPlaylist.playlistID
-                            show.toggle()
+                            show = true
                         }
 
                     }
@@ -124,6 +128,7 @@ struct PlaylistDtunesView: View {
                     let distance = min(0, frame.minY)
                     // 只有当卡片未被推到顶部模糊区时才允许点击
                     let isClickable = distance > -10
+                    let isSelectedForDetail = show && selectedID == playlist.playlistID
 
                     let isLock = index == 0 ? false : !player.appIsPro
 
@@ -136,14 +141,18 @@ struct PlaylistDtunesView: View {
                     )
                     .frame(height: 220)
                     .visualEffect { content, proxy in
-                        content
-                            .scaleEffect(1 + distance / 900)
-                            .offset(y: -distance / 1.35)
-                            .blur(radius: -distance / 60)
-                            .brightness(distance / 500)
+                        let visualDistance: CGFloat = isSelectedForDetail ? 0 : distance
+
+                        return content
+                            .scaleEffect(1 + visualDistance / 900)
+                            .offset(y: -visualDistance / 1.35)
+                            .blur(radius: -visualDistance / 60)
+                            .brightness(visualDistance / 500)
                     }
                     .allowsHitTesting(isClickable)
                     .onTapGesture {
+                        guard !show && !isOpeningDetail else { return }
+
                         let canAccess = (index == 0) || player.appIsPro
                         
                         guard canAccess else {
@@ -155,9 +164,10 @@ struct PlaylistDtunesView: View {
                             player.nowPlayingTracks = player.tracksPlaylistDict[playlist.playlistID] ?? []
                         }
                         print("当前播放列表 ",playlist.title, playlist.playlistID)
+                        isOpeningDetail = true
                         withAnimation(.openCard) {
                             selectedID = playlist.playlistID
-                            show.toggle()
+                            show = true
                         }
                     }
                     .onChange(of: frame.minY) { oldValue, newValue in
@@ -252,6 +262,12 @@ struct PlaylistDtunesView: View {
 
 #Preview {
     @Previewable @Namespace var namespace
-    PlaylistDtunesView(selectedID: .constant(""), show: .constant(true), hasScrolled: .constant(false), namespace: namespace)
+    PlaylistDtunesView(
+        selectedID: .constant(""),
+        show: .constant(true),
+        hasScrolled: .constant(false),
+        isOpeningDetail: .constant(false),
+        namespace: namespace
+    )
         .environmentObject(PlayerStore(purchaseManager: PurchaseManager()))
 }

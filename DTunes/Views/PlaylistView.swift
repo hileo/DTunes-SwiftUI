@@ -10,6 +10,17 @@ import Combine
 import VariableBlur
 import MusicKit
 
+private extension View {
+    @ViewBuilder
+    func matchedGeometryEffectIf(_ condition: Bool, id: String, in namespace: Namespace.ID) -> some View {
+        if condition {
+            matchedGeometryEffect(id: id, in: namespace)
+        } else {
+            self
+        }
+    }
+}
+
 struct PlaylistView: View {
     // MARK: - Properties
     var playlist: PlaylistDT
@@ -40,6 +51,7 @@ struct PlaylistView: View {
     @State private var startOffset: CGFloat? = nil
     @State private var hasTriggeredRefresh = false
     @State private var feedbackGenerator = UIImpactFeedbackGenerator(style: .soft)
+    @State private var useMatchedHeroEffects = true
 
     @State private var showPremiumButton = false
     
@@ -76,8 +88,7 @@ struct PlaylistView: View {
                 }
             }
             .mask {
-                RoundedRectangle(cornerRadius: isCompact ? 36 : 18, style: .continuous)
-                    .matchedGeometryEffect(id: "mask\(playlist.id)", in: namespace)
+                detailMask
             }
             .mask(RoundedRectangle(cornerRadius: viewState.height / 2.5))
             .scaleEffect(-viewState.height / 800 + 1)
@@ -100,6 +111,16 @@ struct PlaylistView: View {
                 }
             }
             .onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.45) {
+                    guard show else { return }
+
+                    var transaction = Transaction()
+                    transaction.disablesAnimations = true
+                    withTransaction(transaction) {
+                        useMatchedHeroEffects = false
+                    }
+                }
+
                 withAnimation(.easeIn(duration: 0.25).delay(1.2)) {
                     showPremiumButton = true
                 }
@@ -116,6 +137,12 @@ struct PlaylistView: View {
     }
 
     // MARK: - View Components
+    @ViewBuilder
+    private var detailMask: some View {
+        RoundedRectangle(cornerRadius: isCompact ? 36 : 18, style: .continuous)
+            .matchedGeometryEffectIf(useMatchedHeroEffects, id: "mask\(playlist.id)", in: namespace)
+    }
+
         @ViewBuilder
         private func head(size: CGSize) -> some View {
             let baseHeight = isCompact
@@ -130,13 +157,13 @@ struct PlaylistView: View {
                 RoundedRectangle(cornerRadius: 0)
                     .fill(Color(hex: playlist.backColor))
                     .frame(height:baseHeight)
-                    .matchedGeometryEffect(id: "backColor\(playlist.id)", in: namespace)
+                    .matchedGeometryEffectIf(useMatchedHeroEffects, id: "backColor\(playlist.id)", in: namespace)
                     .overlay {
                         VStack(alignment: .leading, spacing: isLandscape ? 14 : 10) {
                             Text(playlist.subtitle)
                                 .font(.body.weight(.semibold))
                                 .offset(y: scrollY > 0 ? min(20, scrollY * 0.08) : 0)
-                                .matchedGeometryEffect(id: "subtitle\(playlist.id)", in: namespace)
+                                .matchedGeometryEffectIf(useMatchedHeroEffects, id: "subtitle\(playlist.id)", in: namespace)
                             
                             Text(isCompact
                                  ? (isLandscape ? playlist.title.replacingOccurrences(of: "\n", with: " ") : playlist.title)
@@ -147,7 +174,7 @@ struct PlaylistView: View {
                                 .frame(maxWidth: .infinity, alignment: .leading)
                                 .lineLimit(isCompact ? (isLandscape ? 1 : nil) : nil)
                                 .fixedSize(horizontal: false, vertical: true)
-                                .matchedGeometryEffect(id: "title\(playlist.id)", in: namespace)
+                                .matchedGeometryEffectIf(useMatchedHeroEffects, id: "title\(playlist.id)", in: namespace)
                             
                             Spacer()
                         }
@@ -164,7 +191,7 @@ struct PlaylistView: View {
                                     )
                                     .scaleEffect(scrollY > 0 ? min(1.3, scrollY / 200 + 1) : 1)
                                     .blur(radius: min(6, scrollY / 120))
-                                    .matchedGeometryEffect(id: "wave\(playlist.id)", in: namespace)
+                                    .matchedGeometryEffectIf(useMatchedHeroEffects, id: "wave\(playlist.id)", in: namespace)
                                 } else {
                                     WaveView(
                                         color: Color(hex: playlist.waveColor),
@@ -236,6 +263,7 @@ struct PlaylistView: View {
     
     private var closeButton: some View {
         Button {
+            restoreMatchedHeroEffects()
             withAnimation(.closeCard) { show = false }
         } label: {
             Image(systemName: "chevron.down")
@@ -434,7 +462,16 @@ struct PlaylistView: View {
     
     private func closeAction() {
         withAnimation { viewState = .zero }
+        restoreMatchedHeroEffects()
         withAnimation(.closeCard.delay(0.1)) { show = false }
+    }
+
+    private func restoreMatchedHeroEffects() {
+        var transaction = Transaction()
+        transaction.disablesAnimations = true
+        withTransaction(transaction) {
+            useMatchedHeroEffects = true
+        }
     }
     
     private func fadeIn() {

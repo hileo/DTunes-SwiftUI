@@ -82,9 +82,10 @@ struct PlaylistView: View {
                 Color(hex: playlist.backColor)
                     .frame(height: isCompact ? 20 : 0)
                 
-                if player.tracksPlaylistDict[playlist.playlistID] == nil {
+                if player.tracksPlaylistDict[playlist.playlistID] == nil || player.isLoadingTracks(for: playlist.playlistID) {
                     ProgressView()
                         .frame(maxHeight: .infinity, alignment: .center)
+                        .foregroundStyle(Color(hex: playlist.backColor).opacity(0.5))
                 }
             }
             .mask {
@@ -164,7 +165,7 @@ struct PlaylistView: View {
                                 .font(.body.weight(.semibold))
                                 .offset(y: scrollY > 0 ? min(20, scrollY * 0.08) : 0)
                                 .matchedGeometryEffectIf(useMatchedHeroEffects, id: "subtitle\(playlist.id)", in: namespace)
-                            
+                                .padding(.top, isLandscape ? 4 : 0)
                             Text(isCompact
                                  ? (isLandscape ? playlist.title.replacingOccurrences(of: "\n", with: " ") : playlist.title)
                                  : playlist.title
@@ -349,20 +350,22 @@ struct PlaylistView: View {
             
             let tracks: [Track]
             
-            if let playlistObj = playlist.playlist {
-                // 在后台线程拉取详情
-                let detailedPlaylist = try await playlistObj.with([.tracks])
-                tracks = Array(detailedPlaylist.tracks ?? [])
+            if playlist.playlist != nil {
+                let amFavoriteID = UserDefaults.standard.string(forKey: "player.amFavoritePlaylist")
+                let currentID = playlist.playlist?.id.rawValue
+
+                if currentID == amFavoriteID {
+                    tracks = try await player.refreshTracks(for: playlist)
+                } else {
+                    tracks = try await player.tracks(for: playlist)
+                }
+
                 print("PlistView 加载用户歌曲")
             } else {
-                tracks = try await fetchTracksFromAMPlaylistID(from: playlist.playlistID)
+                tracks = try await player.tracks(for: playlist)
                 print("PlistView 加载DTunes歌曲 ", playlist.playlistID)
             }
             
-            // 关键：一次性同步到主线程，避免多次 MainActor.run
-            await MainActor.run {
-                player.tracksPlaylistDict[playlist.playlistID] = tracks
-            }
             player.nowPlayingTracks = tracks
             
             try await playerManager.setQueue(tracks: tracks)

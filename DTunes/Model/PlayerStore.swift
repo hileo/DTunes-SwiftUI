@@ -37,6 +37,7 @@ final class PlayerStore: ObservableObject {
     @Published var userPlaylists: [PlaylistDT] = []
 
     @Published var sleeptimerManager = SleepTimerManager()
+    @Published private(set) var loadingTrackPlaylistIDs: Set<String> = []
     private var cancellables = Set<AnyCancellable>()
     
     private let purchaseManager: PurchaseManager
@@ -60,5 +61,73 @@ final class PlayerStore: ObservableObject {
                 self?.objectWillChange.send()
             }
             .store(in: &cancellables)
+    }
+
+    @MainActor
+    func tracks(for playlist: PlaylistDT) async throws -> [Track] {
+        let id = playlist.playlistID
+
+        if let cachedTracks = tracksPlaylistDict[id] {
+            return cachedTracks
+        }
+
+        while loadingTrackPlaylistIDs.contains(id) {
+            try await Task.sleep(nanoseconds: 100_000_000)
+
+            if let cachedTracks = tracksPlaylistDict[id] {
+                return cachedTracks
+            }
+        }
+
+        loadingTrackPlaylistIDs.insert(id)
+
+        do {
+            let tracks: [Track]
+            if let playlistObj = playlist.playlist {
+                let detailedPlaylist = try await playlistObj.with([.tracks])
+                tracks = Array(detailedPlaylist.tracks ?? [])
+            } else {
+                tracks = try await fetchTracksFromAMPlaylistID(from: id)
+            }
+
+            tracksPlaylistDict[id] = tracks
+            loadingTrackPlaylistIDs.remove(id)
+            return tracks
+        } catch {
+            loadingTrackPlaylistIDs.remove(id)
+            throw error
+        }
+    }
+
+    @MainActor
+    func refreshTracks(for playlist: PlaylistDT) async throws -> [Track] {
+        let id = playlist.playlistID
+
+        while loadingTrackPlaylistIDs.contains(id) {
+            try await Task.sleep(nanoseconds: 100_000_000)
+        }
+
+        loadingTrackPlaylistIDs.insert(id)
+
+        do {
+            let tracks: [Track]
+            if let playlistObj = playlist.playlist {
+                let detailedPlaylist = try await playlistObj.with([.tracks])
+                tracks = Array(detailedPlaylist.tracks ?? [])
+            } else {
+                tracks = try await fetchTracksFromAMPlaylistID(from: id)
+            }
+
+            tracksPlaylistDict[id] = tracks
+            loadingTrackPlaylistIDs.remove(id)
+            return tracks
+        } catch {
+            loadingTrackPlaylistIDs.remove(id)
+            throw error
+        }
+    }
+
+    func isLoadingTracks(for playlistID: String) -> Bool {
+        loadingTrackPlaylistIDs.contains(playlistID)
     }
 }

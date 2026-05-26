@@ -176,7 +176,8 @@ struct PlaylistDtunesView: View {
                             feedbackGenerator.impactOccurred(intensity: 0.8)
                         }
                     }
-                    .task {
+                    .task(id: playlist.playlistID) {
+                        guard index == 0 || player.appIsPro else { return }
                         await fetchPlaylistTracks(for: playlist)
                     }
                 }
@@ -244,18 +245,10 @@ struct PlaylistDtunesView: View {
     }
     
     private func fetchPlaylistTracks(for playlist: PlaylistDT) async {
-        let id = playlist.playlistID
-        // 如果已经缓存则跳过
-        if player.tracksPlaylistDict[id] == nil
-        {
-            do {
-                let tracks = try await fetchTracksFromAMPlaylistID(from: id)
-                await MainActor.run {
-                    player.tracksPlaylistDict[id] = tracks
-                }
-            } catch {
-                print("Failed to load playlist \(id):", error)
-            }
+        do {
+            _ = try await player.tracks(for: playlist)
+        } catch {
+            print("Failed to load playlist \(playlist.playlistID):", error)
         }
     }
 }

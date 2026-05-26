@@ -186,22 +186,22 @@ struct ContentView: View {
 
         print("currentPlaylist 22=",currentID)
 
-        if player.tracksPlaylistDict[currentID] == nil {
-            do {
-                let tracks = try await fetchTracksFromAMPlaylistID(from: currentID)
-                
-                await MainActor.run {
-                    guard !show else { return } //暂时解决用户快速点击歌单问题
-                    player.tracksPlaylistDict[currentID] = tracks
-                    player.nowPlayingTracks = tracks
-                    player.nowPlayingPlaylist = current
-                }
-                
-                try? await playerManager.setQueue(tracks: tracks)
-                await playerManager.playPause()
-            } catch {
-                print("音轨加载失败: \(error)")
+        do {
+            let tracks = try await player.tracks(for: current)
+            
+            let shouldStartPlayback = await MainActor.run {
+                guard !show else { return false } //暂时解决用户快速点击歌单问题
+                player.nowPlayingTracks = tracks
+                player.nowPlayingPlaylist = current
+                return true
             }
+
+            guard shouldStartPlayback else { return }
+            
+            try? await playerManager.setQueue(tracks: tracks)
+            await playerManager.playPause()
+        } catch {
+            print("音轨加载失败: \(error)")
         }
     }
 }

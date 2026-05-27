@@ -91,6 +91,7 @@
 "Pay_Widgets" = "Widgets interativos";
 "Pay_AdFree" = "Sem anúncios";
 "Pay_Future" = "Atualizações futuras grátis";
+"Pay_Wallpapers" = "Criar fundos de álbum";
 
 "Pay_Continue" = "Continuar";
 "Pay_FreeTrial" = "Teste grátis de 7 dias";
@@ -103,3 +104,5 @@
 
 "Guide_Tip" = "Deslize para a esquerda\npara suas playlists";
 
+"WallpaperSavedAlert" = "O papel de parede foi salvo nas Fotos";
+"WallpaperPhotoPermissionAlert" = "Permita acesso às Fotos para salvar papéis de parede";

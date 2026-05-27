@@ -91,6 +91,7 @@
 "Pay_Widgets" = "Виджеты";
 "Pay_AdFree" = "Без рекламы";
 "Pay_Future" = "Бесплатные обновления";
+"Pay_Wallpapers" = "Создать обои альбома";
 
 "Pay_Continue" = "Продолжить";
 "Pay_FreeTrial" = "7 дней бесплатно";
@@ -103,3 +104,5 @@
 
 "Guide_Tip" = "Свайп влево\nк плейлистам";
 
+"WallpaperSavedAlert" = "Обои сохранены в Фото";
+"WallpaperPhotoPermissionAlert" = "Разрешите доступ к Фото, чтобы сохранять обои";

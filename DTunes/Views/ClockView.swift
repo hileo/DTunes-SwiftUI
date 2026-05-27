@@ -37,6 +37,8 @@ struct ClockView: View {
     @State private var dragOffset: CGFloat = 0
     @State private var showMenu = false
     @State private var landscapeToggle = false
+    @State private var showWallpaperSavedAlert = false
+    @State private var showPhotoLibraryPermissionAlert = false
     
     @State private var showPremiumButton = false
     
@@ -284,6 +286,17 @@ struct ClockView: View {
                     playerManager.updateThemeColor(from: newValue)
                 }
             }
+            .alert("WallpaperSavedAlert", isPresented: $showWallpaperSavedAlert) {
+                Button(NSLocalizedString("AlertOK", comment: ""), role: .cancel) { }
+            }
+            .alert("WallpaperPhotoPermissionAlert", isPresented: $showPhotoLibraryPermissionAlert) {
+                Button(NSLocalizedString("Setting", comment: "")) {
+                    if let url = URL(string: UIApplication.openSettingsURLString) {
+                        UIApplication.shared.open(url)
+                    }
+                }
+                Button(NSLocalizedString("AlertOK", comment: ""), role: .cancel) { }
+            }
             .ignoresSafeArea()
         }
     }
@@ -499,29 +512,45 @@ struct ClockView: View {
                         artworkLayoutButton
 //                            .transition(.opacity.combined(with: .scale))
                     }else if(playerManager.clockLayout == .layoutCapsuleRotation || playerManager.clockLayout == .layoutCapsuleHorizontal){
-                        /*
                         Button {//下载壁纸
-                            switch playerManager.clockLayout {
-                            case .layoutCapsuleRotation:
-                                saveCurrentScreenView(view: ClockCapsuleRotation(exportMode: true).environmentObject(playerManager)
-                                    .environment(\.isLandscape, isLandscape), geometry: geo)
-
-                            case .layoutCapsuleHorizontal:
-                                saveCurrentScreenView(view: ClockCapsuleHorizontal(exportMode: true).environmentObject(playerManager)
-                                    .environment(\.isLandscape, isLandscape), geometry: geo)
-
-                            default:
-                                break
+                            if !player.appIsPro {
+                                playerManager.paywallShow = true
+                            } else{
+                                switch playerManager.clockLayout {
+                                case .layoutCapsuleRotation:
+                                    saveCurrentScreenView(view: ClockCapsuleRotation(exportMode: true).environmentObject(playerManager)
+                                        .environment(\.isLandscape, isLandscape)
+                                        .environment(\.horizontalSizeClass, isCompact ? .compact : .regular), geometry: geo) { success, _ in
+                                            if success {
+                                                showWallpaperSavedAlert = true
+                                            } else {
+                                                showPhotoLibraryPermissionAlert = true
+                                            }
+                                        }
+                                    
+                                case .layoutCapsuleHorizontal:
+                                    saveCurrentScreenView(view: ClockCapsuleHorizontal(exportMode: true).environmentObject(playerManager)
+                                        .environment(\.isLandscape, isLandscape)
+                                        .environment(\.horizontalSizeClass, isCompact ? .compact : .regular), geometry: geo) { success, _ in
+                                            if success {
+                                                showWallpaperSavedAlert = true
+                                            } else {
+                                                showPhotoLibraryPermissionAlert = true
+                                            }
+                                        }
+                                    
+                                default:
+                                    break
+                                }
                             }
                         }  label: {
-                            Image(systemName: "arrow.down")
+                            Image(systemName: "iphone.gen3")
                                 .font(.system(size: 22))
                                 .fontWeight(.regular)
                                 .frame(width: buttonHeight, height: buttonHeight)
                                 .foregroundStyle(Color.white)
                         }
                         .applyGlassEffectInClockView(shape: Circle())
-                        */
                     }else{
                         colorThemeButton
 //                            .transition(.opacity.combined(with: .scale))

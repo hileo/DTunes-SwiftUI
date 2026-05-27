@@ -92,13 +92,13 @@ struct ClockCapsuleRotation: View {
                 )
                 
                 timeView(size: geo.size, minSide: minSide, widthScale: widthScale, heightScale: heightScale)
-                    .opacity(animate ? 1 : 0)
+                    .opacity(exportMode ? 0 : (animate ? 1 : 0))
                     .offset(
-                        x: isLandscape ? (animate ? 0 : -16) : 0,
-                        y: isLandscape ? 0 : (animate ? 0 : -16)
+                        x: isLandscape ? (exportMode ? 0 : (animate ? 0 : -16)) : 0,
+                        y: isLandscape ? 0 : (exportMode ? 0 : (animate ? 0 : -16))
                     )
                     .animation(
-                        .easeOut(duration: 0.5).delay(0.25),
+                        exportMode ? nil : .easeOut(duration: 0.5).delay(0.25),
                         value: animate
                     )
             }
@@ -203,7 +203,7 @@ struct ClockCapsuleRotation: View {
                     height: minSide * heightScale
                 )
                 .rotationEffect(.degrees(-6))
-                .opacity(exportMode ? 1 : (animate ? 0.9 : 0))
+                .opacity(exportMode ? 0.9 : (animate ? 0.9 : 0))
                 .offset(
                     x: isLandscape ? (exportMode ? 0 : (animate ? 0 : -16)) : 0,
                     y: isLandscape ? 0 : (exportMode ? 0 : (animate ? 0 : -16))
@@ -224,7 +224,7 @@ struct ClockCapsuleRotation: View {
                     height: minSide * heightScale
                 )
                 .rotationEffect(.degrees(10))
-                .opacity(exportMode ? 1 : (animate ? 0.7 : 0))
+                .opacity(exportMode ? 0.7 : (animate ? 0.7 : 0))
                 .offset(
                     x: isLandscape ? (exportMode ? 0 : (animate ? 0 : -16)) : 0,
                     y: isLandscape ? 0 : (exportMode ? 0 : (animate ? 0 : -16))
@@ -245,7 +245,7 @@ struct ClockCapsuleRotation: View {
                     height: minSide * heightScale
                 )
                 .rotationEffect(.degrees(-8))
-                .opacity(exportMode ? 1 : (animate ? 0.4 : 0))
+                .opacity(exportMode ? 0.4 : (animate ? 0.4 : 0))
                 .offset(
                     x: isLandscape ? (exportMode ? 0 : (animate ? 0 : -16)) : 0,
                     y: isLandscape ? 0 : (exportMode ? 0 : (animate ? 0 : -16))

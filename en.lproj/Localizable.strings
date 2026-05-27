@@ -91,6 +91,7 @@
 "Pay_Widgets" = "Interactive home screen widgets";
 "Pay_AdFree" = "100% ad-free experience";
 "Pay_Future" = "Free future updates";
+"Pay_Wallpapers" = "Album art wallpaper";
 
 "Pay_Continue" = "Continue";
 "Pay_FreeTrial" = "Start 7-Day Free Trial";
@@ -98,7 +99,10 @@
 "Pay_YearlyTip" = "Autorenewal,cancel anytime";
 "Pay_Lifetime" = "Lifetime";
 "Pay_LifetimeTip" = "One-time payment";
+"Pay_HasUnlockAll" = "All features unlocked\nThanks for your support";
 "Pay_SubscriptionTip" = "Payment is charged to your Apple ID at purchase confirmation. The subscription renews automatically unless canceled at least 24 hours before the current period ends. Renewal is billed within 24 hours before expiration. You can manage or cancel your subscription in App Store account settings. If a free trial is offered, you’ll be charged after it ends; switching plans during the trial forfeits any remaining trial time.";
 
 "Guide_Tip" = "Swipe left to access\nyour playlists";
 
+"WallpaperSavedAlert" = "Wallpaper saved to Photos";
+"WallpaperPhotoPermissionAlert" = "Allow Photos access to save wallpapers";

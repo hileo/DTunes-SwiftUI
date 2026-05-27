@@ -91,6 +91,7 @@
 "Pay_Widgets" = "Widgets interactifs";
 "Pay_AdFree" = "Sans pub";
 "Pay_Future" = "Mises à jour gratuites";
+"Pay_Wallpapers" = "Créer fonds d’album";
 
 "Pay_Continue" = "Continuer";
 "Pay_FreeTrial" = "Essai gratuit 7 jours";
@@ -102,3 +103,6 @@
 "Pay_SubscriptionTip" = "Le paiement est facturé à votre identifiant Apple lors de la confirmation de l’achat. L’abonnement se renouvelle automatiquement sauf annulation au moins 24 heures avant la fin de la période en cours. Le renouvellement est facturé dans les 24 heures précédant l’expiration. Vous pouvez gérer ou annuler votre abonnement dans les réglages de votre compte App Store. Si un essai gratuit est proposé, il sera facturé à la fin de celui-ci ; tout changement pendant l’essai entraîne la perte du temps restant.";
 
 "Guide_Tip" = "Glissez à gauche\nvers vos playlists";
+
+"WallpaperSavedAlert" = "Le fond d’écran a été enregistré dans Photos";
+"WallpaperPhotoPermissionAlert" = "Autorisez l’accès à Photos pour enregistrer des fonds d’écran";

@@ -254,7 +254,11 @@ func score(_ color: Color) -> CGFloat {
 }
 
 
-func saveCurrentScreenView<V: View>(view: V, geometry: GeometryProxy) {
+func saveCurrentScreenView<V: View>(
+    view: V,
+    geometry: GeometryProxy,
+    completion: ((Bool, Error?) -> Void)? = nil
+) {
     let size = geometry.size
     
     let renderer = ImageRenderer(
@@ -265,9 +269,43 @@ func saveCurrentScreenView<V: View>(view: V, geometry: GeometryProxy) {
     
     renderer.scale = UIScreen.main.scale
     
-    if let image = renderer.uiImage {
+    guard let image = renderer.uiImage else {
+        DispatchQueue.main.async {
+            completion?(false, nil)
+        }
+        return
+    }
+    
+    func saveImage() {
         PHPhotoLibrary.shared().performChanges {
             PHAssetChangeRequest.creationRequestForAsset(from: image)
+        } completionHandler: { success, error in
+            DispatchQueue.main.async {
+                completion?(success, error)
+            }
+        }
+    }
+    
+    switch PHPhotoLibrary.authorizationStatus(for: .addOnly) {
+    case .authorized, .limited:
+        saveImage()
+    case .notDetermined:
+        PHPhotoLibrary.requestAuthorization(for: .addOnly) { status in
+            if status == .authorized || status == .limited {
+                saveImage()
+            } else {
+                DispatchQueue.main.async {
+                    completion?(false, nil)
+                }
+            }
+        }
+    case .denied, .restricted:
+        DispatchQueue.main.async {
+            completion?(false, nil)
+        }
+    @unknown default:
+        DispatchQueue.main.async {
+            completion?(false, nil)
         }
     }
 }

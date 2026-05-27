@@ -95,6 +95,7 @@
 "Pay_Widgets" = "可控制播放的桌面小组件";
 "Pay_AdFree" = "100%无广告无打扰";
 "Pay_Future" = "未来新功能免费更新";
+"Pay_Wallpapers" = "生成专辑艺术壁纸";
 
 "Pay_Continue" = "继续";
 "Pay_FreeTrial" = "开始7天免费试用";
@@ -106,3 +107,6 @@
 "Pay_SubscriptionTip" = "付款将在确认购买时从您的Apple ID扣除。除非在当前周期结束前至少24小时取消，否则订阅会自动续订。续订费用将在到期前24小时内收取。您可在App Store 账户设置中管理或取消订阅。如提供免费试用，试用结束后将自动收费；试用期间更改订阅将失去剩余试用时间。";
 
 "Guide_Tip" = "左滑进入您的\n私人歌单";
+
+"WallpaperSavedAlert" = "壁纸已下载到相册";
+"WallpaperPhotoPermissionAlert" = "请允许访问相册以保存壁纸";

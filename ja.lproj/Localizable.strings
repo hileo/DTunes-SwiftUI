@@ -91,6 +91,7 @@
 "Pay_Widgets" = "ホームウィジェット";
 "Pay_AdFree" = "広告なし";
 "Pay_Future" = "今後のアップデート無料";
+"Pay_Wallpapers" = "アルバムアート壁紙を生成";
 
 "Pay_Continue" = "続ける";
 "Pay_FreeTrial" = "7日間無料トライアル";
@@ -103,3 +104,5 @@
 
 "Guide_Tip" = "左にスワイプで\nプレイリストへ";
 
+"WallpaperSavedAlert" = "壁紙を写真に保存しました";
+"WallpaperPhotoPermissionAlert" = "壁紙を保存するには写真へのアクセスを許可してください";

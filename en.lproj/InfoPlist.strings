@@ -7,4 +7,5 @@
 */
 CFBundleDisplayName = "DTunes";
 NSAppleMusicUsageDescription = "App would like to use music library to provide audio playback";
-NSPhotoLibraryUsageDescription = "Save image to your Photo Library";
+NSPhotoLibraryUsageDescription = "Save Wallpapers to your Photo Library";
+NSPhotoLibraryAddUsageDescription = "Save Wallpapers to your Photo Library";

@@ -91,6 +91,7 @@
 "Pay_Widgets" = "위젯 기능";
 "Pay_AdFree" = "광고 없음";
 "Pay_Future" = "향후 업데이트 무료";
+"Pay_Wallpapers" = "앨범 아트 배경화면 생성";
 
 "Pay_Continue" = "계속";
 "Pay_FreeTrial" = "7일 무료 체험";
@@ -103,3 +104,5 @@
 
 "Guide_Tip" = "왼쪽으로 스와이프\n플레이리스트로";
 
+"WallpaperSavedAlert" = "배경화면이 사진 앱에 저장되었습니다";
+"WallpaperPhotoPermissionAlert" = "배경화면을 저장하려면 사진 접근을 허용해 주세요";

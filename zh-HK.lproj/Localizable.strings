@@ -91,6 +91,7 @@
 "Pay_Widgets" = "可控制播放的桌面小工具";
 "Pay_AdFree" = "100%無廣告無打擾";
 "Pay_Future" = "未來新功能免費更新";
+"Pay_Wallpapers" = "生成專輯藝術壁紙";
 
 "Pay_Continue" = "繼續";
 "Pay_FreeTrial" = "開始7天免費試用";
@@ -102,3 +103,5 @@
 
 "Guide_Tip" = "左滑進入你的\n私人歌單";
 
+"WallpaperSavedAlert" = "壁紙已下載到相簿";
+"WallpaperPhotoPermissionAlert" = "請允許存取相簿以儲存壁紙";

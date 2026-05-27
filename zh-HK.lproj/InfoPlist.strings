@@ -7,4 +7,5 @@
 */
 CFBundleDisplayName = "DTunes";
 NSAppleMusicUsageDescription = "應用程式想要存取音樂庫來播放音頻";
-NSPhotoLibraryUsageDescription = "將圖像保存到您的照片庫";
+NSPhotoLibraryUsageDescription = "用於將壁紙儲存到您的相簿";
+NSPhotoLibraryAddUsageDescription = "用於將壁紙儲存到您的相簿";

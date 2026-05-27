@@ -225,7 +225,7 @@ struct PaywallView: View {
             FeatureRow(icon: "clock.badge", text: NSLocalizedString("Pay_ClockTheme", comment: ""))
             FeatureRow(icon: "square.grid.2x2", text: NSLocalizedString("Pay_Widgets", comment: ""))
             FeatureRow(icon: "xmark.seal", text: NSLocalizedString("Pay_AdFree", comment: ""))
-            FeatureRow(icon: "wand.and.rays.inverse", text: NSLocalizedString("Pay_Future", comment: ""))
+            FeatureRow(icon: "iphone.gen3", text: NSLocalizedString("Pay_Wallpapers", comment: ""))
         }
         .padding(.horizontal, 40)
     }

@@ -8,3 +8,4 @@
 CFBundleDisplayName = "DTunes";
 NSAppleMusicUsageDescription = "Приложение хочет использовать музыкальную библиотеку для воспроизведения аудио";
 NSPhotoLibraryUsageDescription = "Сохранить изображение в вашу фотобиблиотеку";
+NSPhotoLibraryAddUsageDescription = "Сохранить изображение в вашу фотобиблиотеку";

@@ -91,6 +91,7 @@
 "Pay_Widgets" = "Interaktive Widgets";
 "Pay_AdFree" = "Werbefrei";
 "Pay_Future" = "Zukünftige Updates frei";
+"Pay_Wallpapers" = "Album-Wallpaper erstellen";
 
 "Pay_Continue" = "Weiter";
 "Pay_FreeTrial" = "7 Tage gratis testen";
@@ -103,3 +104,5 @@
 
 "Guide_Tip" = "Nach links wischen\nzu deinen Playlists";
 
+"WallpaperSavedAlert" = "Hintergrundbild wurde in Fotos gespeichert";
+"WallpaperPhotoPermissionAlert" = "Erlaube den Zugriff auf Fotos, um Hintergrundbilder zu speichern";

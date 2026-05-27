@@ -58,13 +58,13 @@ struct ClockCapsuleHorizontal: View {
                     }
                 }
                 timeView(size: geo.size)
-                    .opacity(animate ? 1 : 0)
+                    .opacity(exportMode ? 0 : (animate ? 1 : 0))
                     .offset(
-                        x: isLandscape ? (animate ? 0 : -16) : 0,
-                        y: isLandscape ? 0 : (animate ? 0 : -16)
+                        x: isLandscape ? (exportMode ? 0 : (animate ? 0 : -16)) : 0,
+                        y: isLandscape ? 0 : (exportMode ? 0 : (animate ? 0 : -16))
                     )
                     .animation(
-                        .easeOut(duration: 0.5).delay(0.25),
+                        exportMode ? nil : .easeOut(duration: 0.5).delay(0.25),
                         value: animate
                     )
             }

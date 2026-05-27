@@ -36,7 +36,8 @@ struct PlaylistView: View {
     @Environment(\.horizontalSizeClass) var hSizeClass
     @Environment(\.verticalSizeClass) var vSizeClass
     @Environment(\.scenePhase) private var scenePhase
-    
+    @Environment(\.isPad) var isPad
+
     @EnvironmentObject var player: PlayerStore
     @EnvironmentObject var playerManager: PlayerManager
     
@@ -101,7 +102,7 @@ struct PlaylistView: View {
                     PremiumButton() {
                         playerManager.paywallShow = true
                     }
-                    .padding(.bottom, 130)
+                    .padding(.bottom, isPad ? 150 : 130)
                     // 使用 transition 组合位移和透明度
                     .transition(
                         .asymmetric(

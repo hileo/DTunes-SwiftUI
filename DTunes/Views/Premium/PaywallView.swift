@@ -23,7 +23,10 @@ struct PaywallView: View {
     @State private var showCloseButton = false
     @State private var appear = [false, false, false, false, false, false]
     @State private var continueText = NSLocalizedString("Pay_Continue", comment: "")
+    @State private var productRefreshAttempts = 0
     @State var counter4:Int = 0
+    
+    private let maxProductRefreshAttempts = 10
 
     var safeAreaSpace: CGFloat {
         isLandscape ? 0 : 44
@@ -35,6 +38,15 @@ struct PaywallView: View {
     
     enum PurchaseOption {
         case yearly, lifetime
+    }
+    
+    var selectedProduct: Product? {
+        switch selectedOption {
+        case .yearly:
+            return purchaseManager.yearlyProduct ?? purchaseManager.lifetimeProduct
+        case .lifetime:
+            return purchaseManager.lifetimeProduct ?? purchaseManager.yearlyProduct
+        }
     }
     
     var body: some View {
@@ -134,14 +146,74 @@ struct PaywallView: View {
         }
         .onAppear {
             isBreathing = true
+            syncSelectedOptionWithProducts()
+            refreshProductsOnAppearIfNeeded()
             for i in appear.indices {
                 DispatchQueue.main.asyncAfter(deadline: .now() + Double(i) * 0.1) {
                     appear[i] = true
                 }
             }
         }
+        .onChange(of: purchaseManager.products.map(\.id)) { _, _ in
+            syncSelectedOptionWithProducts()
+            if !purchaseManager.products.isEmpty {
+                productRefreshAttempts = 0
+            }
+        }
+        .onChange(of: purchaseManager.productsLoadFailed) { _, failed in
+            if failed {
+                refreshProductsIfNeeded()
+            }
+        }
         .animation(.easeInOut, value: purchaseManager.isPurchasing)
         
+    }
+    
+    private var shouldShowProductLoading: Bool {
+        purchaseManager.products.isEmpty &&
+        (purchaseManager.isLoadingProducts ||
+         (purchaseManager.productsLoadFailed && productRefreshAttempts < maxProductRefreshAttempts))
+    }
+    
+    private func refreshProductsOnAppearIfNeeded() {
+        guard purchaseManager.products.isEmpty else { return }
+        
+        if purchaseManager.productsLoadFailed {
+            refreshProductsIfNeeded()
+        } else if !purchaseManager.isLoadingProducts {
+            Task {
+                await purchaseManager.loadProducts()
+            }
+        }
+    }
+    
+    private func refreshProductsIfNeeded() {
+        guard purchaseManager.products.isEmpty,
+              !purchaseManager.isLoadingProducts,
+              productRefreshAttempts < maxProductRefreshAttempts else {
+            return
+        }
+        
+        productRefreshAttempts += 1
+        
+        Task {
+            try? await Task.sleep(nanoseconds: 800_000_000)
+            await purchaseManager.loadProducts(force: true)
+        }
+    }
+    
+    private func syncSelectedOptionWithProducts() {
+        if selectedOption == .lifetime,
+           purchaseManager.lifetimeProduct == nil,
+           purchaseManager.yearlyProduct != nil {
+            selectedOption = .yearly
+            continueText = NSLocalizedString("Pay_FreeTrial", comment: "")
+        } else if selectedOption == .yearly,
+                  purchaseManager.yearlyProduct == nil,
+                  purchaseManager.lifetimeProduct != nil {
+            selectedOption = .lifetime
+            continueText = NSLocalizedString("Pay_Continue", comment: "")
+        }
     }
     
     @ViewBuilder
@@ -149,51 +221,102 @@ struct PaywallView: View {
         
          // 付费选项卡片
          VStack(spacing: 16) {
-             // Yearly 选项
-             if let yearly = purchaseManager.product(for: ProductID.yearly.rawValue) {
-                 SubscriptionCard(
-                     title: NSLocalizedString("Pay_Yearly", comment: ""),
-                     price: yearly.displayPrice,
-                     subtitle: NSLocalizedString("Pay_YearlyTip", comment: ""),
-                     isSelected: selectedOption == .yearly
-                 ){
-                     selectedOption = .yearly
-                     withAnimation(){
-                         continueText = NSLocalizedString("Pay_FreeTrial", comment: "")
+             if shouldShowProductLoading {
+                 productLoadingView
+                     .appearAnimation(appear[2])
+             } else if purchaseManager.productsLoadFailed {
+                 productUnavailableView
+                     .appearAnimation(appear[2])
+             } else {
+                 // Yearly 选项
+                 if let yearly = purchaseManager.yearlyProduct {
+                     SubscriptionCard(
+                         title: NSLocalizedString("Pay_Yearly", comment: ""),
+                         price: yearly.displayPrice,
+                         subtitle: NSLocalizedString("Pay_YearlyTip", comment: ""),
+                         isSelected: selectedOption == .yearly
+                     ){
+                         selectedOption = .yearly
+                         withAnimation(){
+                             continueText = NSLocalizedString("Pay_FreeTrial", comment: "")
+                         }
                      }
-                     Task {
-                         await purchaseManager.purchase(yearly)
-                     }
+                     .disabled(purchaseManager.isPurchasing)
+                     .appearAnimation(appear[2])
                  }
-                 .disabled(purchaseManager.isPurchasing)
-                 .appearAnimation(appear[2])
-             }
-             
-             
-             // Lifetime 选项
-             if let lifetime = purchaseManager.product(for: ProductID.lifetimeV2.rawValue) {
-                 SubscriptionCard(
-                     title: NSLocalizedString("Pay_Lifetime", comment: ""),
-                     price: lifetime.displayPrice,
-                     subtitle: NSLocalizedString("Pay_LifetimeTip", comment: ""),
-                     isSelected: selectedOption == .lifetime
-                 ){
-                     selectedOption = .lifetime
-                     withAnimation(){
-                         continueText = "继续"
+                 
+                 
+                 // Lifetime 选项
+                 if let lifetime = purchaseManager.lifetimeProduct {
+                     SubscriptionCard(
+                         title: NSLocalizedString("Pay_Lifetime", comment: ""),
+                         price: lifetime.displayPrice,
+                         subtitle: NSLocalizedString("Pay_LifetimeTip", comment: ""),
+                         isSelected: selectedOption == .lifetime
+                     ){
+                         selectedOption = .lifetime
+                         withAnimation(){
+                             continueText = NSLocalizedString("Pay_Continue", comment: "")
+                         }
                      }
-                     Task {
-                         await purchaseManager.purchase(lifetime)
-                     }
+                     .appearAnimation(appear[3])
+                     .disabled(purchaseManager.isPurchasing)
                  }
-                 .appearAnimation(appear[3])
-                 .disabled(purchaseManager.isPurchasing)
              }
          }
          .padding(.horizontal, 24)
          
-         continueButton
-             .appearAnimation(appear[4])
+         if !purchaseManager.products.isEmpty {
+             continueButton
+                 .appearAnimation(appear[4])
+         }
+    }
+    
+    var productLoadingView: some View {
+        HStack(spacing: 12) {
+            ProgressView()
+                .tint(.white)
+            
+            Text("Pay_LoadingProducts")
+                .font(.headline)
+                .foregroundColor(.white)
+        }
+        .frame(maxWidth: .infinity)
+        .frame(height: 80)
+        .background(
+            RoundedRectangle(cornerRadius: 20)
+                .fill(Color.black.opacity(0.3))
+        )
+    }
+    
+    var productUnavailableView: some View {
+        VStack(spacing: 12) {
+            Text("Pay_ProductsUnavailable")
+                .font(.headline)
+                .foregroundColor(.white)
+            
+            Button {
+                productRefreshAttempts = 0
+                Task {
+                    await purchaseManager.loadProducts(force: true)
+                }
+            } label: {
+                Text("Pay_Retry")
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundColor(.black)
+                    .padding(.horizontal, 18)
+                    .padding(.vertical, 8)
+                    .background(Color.white)
+                    .clipShape(Capsule())
+            }
+            .disabled(purchaseManager.isLoadingProducts)
+        }
+        .frame(maxWidth: .infinity)
+        .frame(height: 112)
+        .background(
+            RoundedRectangle(cornerRadius: 20)
+                .fill(Color.black.opacity(0.3))
+        )
     }
     
     var premiumTitle:some View{
@@ -245,19 +368,9 @@ struct PaywallView: View {
     
     var continueButton:some View{
         Button(action: {
-            if selectedOption == .yearly {
-                if let yearly = purchaseManager.product(for: ProductID.yearly.rawValue) {
-                    Task {
-                        await purchaseManager.purchase(yearly)
-                    }
-                }
-            }
-
-            if selectedOption == .lifetime {
-                if let lifetime = purchaseManager.product(for: ProductID.lifetimeV2.rawValue) {
-                    Task {
-                        await purchaseManager.purchase(lifetime)
-                    }
+            if let selectedProduct {
+                Task {
+                    await purchaseManager.purchase(selectedProduct)
                 }
             }
         }) {
@@ -270,7 +383,7 @@ struct PaywallView: View {
                 .clipShape(Capsule())
         }
         .padding(.horizontal, 24)
-        .disabled(purchaseManager.isPurchasing)
+        .disabled(purchaseManager.isPurchasing || selectedProduct == nil)
     }
     
     var  bottomLink:some View{

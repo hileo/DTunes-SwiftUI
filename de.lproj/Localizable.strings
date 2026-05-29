@@ -99,6 +99,9 @@
 "Pay_YearlyTip" = "Automatische Verlängerung, kündbar";
 "Pay_Lifetime" = "Lifetime";
 "Pay_LifetimeTip" = "Einmalzahlung";
+"Pay_LoadingProducts" = "Produkte werden geladen...";
+"Pay_ProductsUnavailable" = "Produkte nicht verfügbar";
+"Pay_Retry" = "Erneut versuchen";
 "Pay_HasUnlockAll" = "Alle Funktionen freigeschaltet\nDanke für deine Unterstützung";
 "Pay_SubscriptionTip" = "Die Zahlung wird bei Bestätigung des Kaufs über Ihre Apple ID abgebucht. Das Abonnement verlängert sich automatisch, sofern es nicht mindestens 24 Stunden vor Ende des aktuellen Zeitraums gekündigt wird. Die Verlängerung wird innerhalb von 24 Stunden vor Ablauf berechnet. Sie können Ihr Abonnement in den App Store-Kontoeinstellungen verwalten oder kündigen. Wenn eine kostenlose Testphase angeboten wird, erfolgt die Abbuchung nach deren Ende; bei einem Wechsel während der Testphase verfällt die verbleibende Zeit.";
 

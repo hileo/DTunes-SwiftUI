@@ -99,6 +99,9 @@
 "Pay_YearlyTip" = "Autorenewal,cancel anytime";
 "Pay_Lifetime" = "Lifetime";
 "Pay_LifetimeTip" = "One-time payment";
+"Pay_LoadingProducts" = "Loading products...";
+"Pay_ProductsUnavailable" = "Products unavailable";
+"Pay_Retry" = "Retry";
 "Pay_HasUnlockAll" = "All features unlocked\nThanks for your support";
 "Pay_SubscriptionTip" = "Payment is charged to your Apple ID at purchase confirmation. The subscription renews automatically unless canceled at least 24 hours before the current period ends. Renewal is billed within 24 hours before expiration. You can manage or cancel your subscription in App Store account settings. If a free trial is offered, you’ll be charged after it ends; switching plans during the trial forfeits any remaining trial time.";
 

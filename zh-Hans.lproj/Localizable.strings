@@ -103,6 +103,9 @@
 "Pay_YearlyTip" = "自动续订，随时可取消";
 "Pay_Lifetime" = "终身会员";
 "Pay_LifetimeTip" = "一次性付费,永久使用";
+"Pay_LoadingProducts" = "正在加载商品...";
+"Pay_ProductsUnavailable" = "商品暂不可用";
+"Pay_Retry" = "重试";
 "Pay_HasUnlockAll" = "你已经解锁所有功能\n感谢支持";
 "Pay_SubscriptionTip" = "付款将在确认购买时从您的Apple ID扣除。除非在当前周期结束前至少24小时取消，否则订阅会自动续订。续订费用将在到期前24小时内收取。您可在App Store 账户设置中管理或取消订阅。如提供免费试用，试用结束后将自动收费；试用期间更改订阅将失去剩余试用时间。";
 

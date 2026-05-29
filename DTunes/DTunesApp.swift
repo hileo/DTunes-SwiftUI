@@ -10,10 +10,16 @@ import SwiftUI
 @main
 struct DTunesApp: App {
     @StateObject private var musicAuth = MusicAuthViewModel()
-    @StateObject private var playerStore = PlayerStore(purchaseManager: PurchaseManager())
+    @StateObject private var playerStore: PlayerStore
     @StateObject private var playerManager = PlayerManager()
-    @StateObject private var purchaseManager = PurchaseManager()
+    @StateObject private var purchaseManager: PurchaseManager
     @StateObject var router = AppRouter(playerManager: PlayerManager())
+    
+    init() {
+        let purchaseManager = PurchaseManager()
+        _purchaseManager = StateObject(wrappedValue: purchaseManager)
+        _playerStore = StateObject(wrappedValue: PlayerStore(purchaseManager: purchaseManager))
+    }
 
     var body: some Scene {
         WindowGroup {

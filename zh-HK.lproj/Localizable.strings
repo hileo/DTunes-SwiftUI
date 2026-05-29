@@ -99,7 +99,11 @@
 "Pay_YearlyTip" = "自動續訂，隨時可取消";
 "Pay_Lifetime" = "終身會員";
 "Pay_LifetimeTip" = "一次性付費，永久使用";
+"Pay_LoadingProducts" = "正在載入商品...";
+"Pay_ProductsUnavailable" = "商品暫不可用";
+"Pay_Retry" = "重試";
 "Pay_HasUnlockAll" = "你已解鎖所有功能\n感謝支持";
+"Pay_SubscriptionTip" = "付款會在確認購買時從你的 Apple ID 扣除。除非在目前週期結束前至少 24 小時取消，否則訂閱會自動續訂。續訂費用會在到期前 24 小時內收取。你可以在 App Store 帳戶設定中管理或取消訂閱。如提供免費試用，試用結束後將會收費；試用期間更改方案將失去剩餘試用時間。";
 
 "Guide_Tip" = "左滑進入你的\n私人歌單";
 

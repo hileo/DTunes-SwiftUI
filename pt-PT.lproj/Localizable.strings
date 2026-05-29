@@ -99,6 +99,9 @@
 "Pay_YearlyTip" = "Renovação automática, cancele a qualquer momento";
 "Pay_Lifetime" = "Vitalício";
 "Pay_LifetimeTip" = "Pagamento único";
+"Pay_LoadingProducts" = "Carregando produtos...";
+"Pay_ProductsUnavailable" = "Produtos indisponíveis";
+"Pay_Retry" = "Tentar novamente";
 "Pay_HasUnlockAll" = "Todos os recursos desbloqueados\nObrigado pelo apoio";
 "Pay_SubscriptionTip" = "O pagamento é cobrado no seu Apple ID na confirmação da compra. A assinatura renova automaticamente, a menos que seja cancelada com pelo menos 24 horas de antecedência ao fim do período atual. A renovação será cobrada dentro das 24 horas anteriores ao vencimento. Você pode gerenciar ou cancelar a assinatura nas configurações da conta da App Store. Se houver teste gratuito, a cobrança ocorrerá após o término; alterar o plano durante o teste resultará na perda do tempo restante.";
 

@@ -99,6 +99,9 @@
 "Pay_YearlyTip" = "Renouvellement auto, annulation possible";
 "Pay_Lifetime" = "À vie";
 "Pay_LifetimeTip" = "Paiement unique";
+"Pay_LoadingProducts" = "Chargement des produits...";
+"Pay_ProductsUnavailable" = "Produits indisponibles";
+"Pay_Retry" = "Réessayer";
 "Pay_HasUnlockAll" = "Toutes les fonctions débloquées\nMerci pour votre soutien";
 "Pay_SubscriptionTip" = "Le paiement est facturé à votre identifiant Apple lors de la confirmation de l’achat. L’abonnement se renouvelle automatiquement sauf annulation au moins 24 heures avant la fin de la période en cours. Le renouvellement est facturé dans les 24 heures précédant l’expiration. Vous pouvez gérer ou annuler votre abonnement dans les réglages de votre compte App Store. Si un essai gratuit est proposé, il sera facturé à la fin de celui-ci ; tout changement pendant l’essai entraîne la perte du temps restant.";
 

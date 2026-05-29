@@ -99,6 +99,9 @@
 "Pay_YearlyTip" = "自動更新・いつでも解約";
 "Pay_Lifetime" = "買い切り";
 "Pay_LifetimeTip" = "一回払い";
+"Pay_LoadingProducts" = "商品を読み込み中...";
+"Pay_ProductsUnavailable" = "商品を利用できません";
+"Pay_Retry" = "再試行";
 "Pay_HasUnlockAll" = "すべての機能を解放済み\nご支援ありがとうございます";
 "Pay_SubscriptionTip" = "購入確認時にApple IDに課金されます。現在の期間終了の24時間前までに解約しない限り、自動更新されます。更新料金は期間終了前24時間以内に請求されます。サブスクリプションはApp Storeのアカウント設定から管理・解約できます。無料トライアルがある場合、終了後に課金されます。トライアル期間中にプランを変更すると、残りの試用期間は失効します。";
 

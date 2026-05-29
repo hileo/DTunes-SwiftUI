@@ -22,6 +22,7 @@
 		5D6914102F1E0358002C7DED /* Prisma.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D69140F2F1E0358002C7DED /* Prisma.ttf */; };
 		5D6914122F1E0362002C7DED /* PixelTwist.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D6914112F1E0362002C7DED /* PixelTwist.ttf */; };
 		5D8BA2A62F7CDFBB00616ADD /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D8BA2A52F7CDFBB00616ADD /* Launch Screen.storyboard */; };
+		5DFF50442FC98D36001CED54 /* VariableBlur in Frameworks */ = {isa = PBXBuildFile; productRef = 5D6913912F18E045002C7DED /* VariableBlur */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DFF50442FC98D36001CED54 /* VariableBlur in Frameworks */,
 				5D4617D42F8E12DD0098C823 /* ClockRotationEffect in Frameworks */,
 				5D5CB3382F81622700E7D643 /* ConfettiSwiftUI in Frameworks */,
 				5D61D79E2F4597DD004D2018 /* VariableBlur in Frameworks */,
@@ -229,14 +231,7 @@
 			);
 			name = DTunes;
 			packageProductDependencies = (
-				5D9B9C772F13888500BEF28D /* Glur */,
-				5D9B9C7A2F1388E200BEF28D /* Glur */,
-				5D9B9C7D2F1395D500BEF28D /* VariableBlurView */,
 				5D6913912F18E045002C7DED /* VariableBlur */,
-				5D6913ED2F1C99AF002C7DED /* BottomSheet */,
-				5D6914322F20FF3B002C7DED /* GlassText */,
-				5D6914352F20FFAC002C7DED /* GlassText */,
-				5D69143B2F20FFED002C7DED /* GlassText */,
 				5DE2E42F2F25D1B40040F8FB /* VariableBlur */,
 				5D6734AA2F35D4AF005866C6 /* SwiftyJSON */,
 				5D5CB3372F81622700E7D643 /* ConfettiSwiftUI */,
@@ -405,7 +400,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.0.2;
+				MARKETING_VERSION = 2.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gogoapp.dtunes.widgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -437,7 +432,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 2.0.2;
+				MARKETING_VERSION = 2.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gogoapp.dtunes.widgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -600,7 +595,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.2;
+				MARKETING_VERSION = 2.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gogoapp.dtunes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -642,7 +637,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.2;
+				MARKETING_VERSION = 2.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.gogoapp.dtunes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -728,34 +723,6 @@
 		5D6913912F18E045002C7DED /* VariableBlur */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = VariableBlur;
-		};
-		5D6913ED2F1C99AF002C7DED /* BottomSheet */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = BottomSheet;
-		};
-		5D6914322F20FF3B002C7DED /* GlassText */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = GlassText;
-		};
-		5D6914352F20FFAC002C7DED /* GlassText */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = GlassText;
-		};
-		5D69143B2F20FFED002C7DED /* GlassText */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = GlassText;
-		};
-		5D9B9C772F13888500BEF28D /* Glur */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Glur;
-		};
-		5D9B9C7A2F1388E200BEF28D /* Glur */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Glur;
-		};
-		5D9B9C7D2F1395D500BEF28D /* VariableBlurView */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = VariableBlurView;
 		};
 		5DE2E42F2F25D1B40040F8FB /* VariableBlur */ = {
 			isa = XCSwiftPackageProductDependency;

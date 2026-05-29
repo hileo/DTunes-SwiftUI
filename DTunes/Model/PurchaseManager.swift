@@ -14,15 +14,24 @@ enum ProductID: String {
     case lifetimeV2 = "com.gogoapp.dtunes.lifetimeV2"
 }
 
+private enum ProductLoadError: Error {
+    case timeout
+}
+
 @MainActor
 final class PurchaseManager: ObservableObject {
     @Published var products: [Product] = []
     @Published var isPro: Bool = false
     @Published var counter:Int = 0
     @Published var isPurchasing: Bool = false
+    @Published var isLoadingProducts: Bool = false
+    @Published var productsLoadFailed: Bool = false
+    
+    private let productLoadTimeoutNanoseconds: UInt64 = 8_000_000_000
     
     var productIDs = [
         ProductID.lifetimeV2.rawValue,
+        ProductID.lifetime.rawValue,
         ProductID.yearly.rawValue
     ]
     
@@ -34,11 +43,43 @@ final class PurchaseManager: ObservableObject {
         }
     }
     
-    func loadProducts() async {
+    func loadProducts(force: Bool = false) async {
+        if isLoadingProducts && !force {
+            return
+        }
+        
+        isLoadingProducts = true
+        productsLoadFailed = false
+        defer {
+            isLoadingProducts = false
+        }
+        
         do {
-            products = try await Product.products(for: productIDs)
+            products = try await productsWithTimeout(for: productIDs)
+            productsLoadFailed = products.isEmpty
         } catch {
+            productsLoadFailed = true
             print("加载商品失败: \(error)")
+        }
+    }
+    
+    private func productsWithTimeout(for ids: [String]) async throws -> [Product] {
+        try await withThrowingTaskGroup(of: [Product].self) { group in
+            group.addTask {
+                try await Product.products(for: ids)
+            }
+            
+            group.addTask { [productLoadTimeoutNanoseconds] in
+                try await Task.sleep(nanoseconds: productLoadTimeoutNanoseconds)
+                throw ProductLoadError.timeout
+            }
+            
+            guard let products = try await group.next() else {
+                throw ProductLoadError.timeout
+            }
+            
+            group.cancelAll()
+            return products
         }
     }
     
@@ -84,6 +125,14 @@ final class PurchaseManager: ObservableObject {
     
     func product(for id: String) -> Product? {
         products.first { $0.id == id }
+    }
+    
+    var yearlyProduct: Product? {
+        product(for: ProductID.yearly.rawValue)
+    }
+    
+    var lifetimeProduct: Product? {
+        product(for: ProductID.lifetimeV2.rawValue) ?? product(for: ProductID.lifetime.rawValue)
     }
     
     func purchase(_ product: Product) async {

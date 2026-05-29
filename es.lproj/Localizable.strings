@@ -99,6 +99,9 @@
 "Pay_YearlyTip" = "Renovación automática, cancelar cuando quieras";
 "Pay_Lifetime" = "De por vida";
 "Pay_LifetimeTip" = "Pago único";
+"Pay_LoadingProducts" = "Cargando productos...";
+"Pay_ProductsUnavailable" = "Productos no disponibles";
+"Pay_Retry" = "Reintentar";
 "Pay_HasUnlockAll" = "Todas las funciones desbloqueadas\nGracias por tu apoyo";
 "Pay_SubscriptionTip" = "El pago se carga a tu Apple ID al confirmar la compra. La suscripción se renueva automáticamente a menos que se cancele al menos 24 horas antes del final del período actual. La renovación se cobrará dentro de las 24 horas previas al vencimiento. Puedes gestionar o cancelar la suscripción en los ajustes de tu cuenta de App Store. Si hay prueba gratuita, se cobrará al finalizar; cambiar de plan durante la prueba hará que se pierda el tiempo restante.";
 
